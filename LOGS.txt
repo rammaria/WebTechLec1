@@ -1,0 +1,147 @@
+commit 72c57f64374d6cb5ade5990ce31761a8b2b60246 (HEAD -> master, origin/master, origin/HEAD)
+Author: gabozkhi <gabrielbucsit5@gmail.com>
+Date:   Mon Feb 26 13:47:04 2018 +0800
+
+    Added links to the head tag of glossary.html
+
+commit 4462e9de69831aa4c50eb1732289f2e35b882dfa
+Author: gabozkhi <gabrielbucsit5@gmail.com>
+Date:   Mon Feb 26 13:44:34 2018 +0800
+
+    Added hero-banner class to index.html
+
+commit 38a4ab9b4cebe74d105c00ab96b06c2fccce634f
+Author: gabozkhi <gabrielbucsit5@gmail.com>
+Date:   Mon Feb 26 13:38:25 2018 +0800
+
+    Added font link
+
+commit 5d300504f946a3faf9f5dfa0b6d0a0eea6820f62
+Merge: fd1680a 70cacad
+Author: kharya0 <kkdvillegas@gmail.com>
+Date:   Mon Feb 26 12:43:11 2018 +0800
+
+    Merge branch 'master' of https://github.com/rammaria/WebTechLec1
+
+commit fd1680a7c0a7ba3210770a56eea723799f3df626
+Author: kharya0 <kkdvillegas@gmail.com>
+Date:   Mon Feb 26 12:42:02 2018 +0800
+
+    Added status codes to prelims
+
+commit 70cacad2583e1ecd4ab5b696872218461efc59ca
+Author: unknown <2159155@slu.edu.ph>
+Date:   Mon Feb 26 12:15:54 2018 +0800
+
+    Added more questions to the quiz
+
+commit 6f0130a20ab2e284ae8e1a9aca2f85220ec82706
+Author: kharya0 <kkdvillegas@gmail.com>
+Date:   Mon Feb 26 12:09:47 2018 +0800
+
+    Added terms to the glossary
+
+commit 1f97631bf776f675fade8cbb78c9540478e2cd30
+Merge: bd027b6 4b2ae21
+Author: unknown <dev.mintgames@gmail.com>
+Date:   Mon Feb 26 11:53:02 2018 +0800
+
+    Merge branch 'master' of https://github.com/rammaria/WebTechLec1
+
+commit bd027b6fad2eeaf025aec2696f49c1fb12d3423b
+Author: unknown <dev.mintgames@gmail.com>
+Date:   Mon Feb 26 11:52:48 2018 +0800
+
+    added navigation styling
+
+commit 4b2ae215c7506759ca6d7ee2ba2268c288ed98b8
+Author: rammaria <rammariadvincula@gmail.com>
+Date:   Mon Feb 26 11:32:53 2018 +0800
+
+    Added HTTP discussion, empty LOGS.TXT and README.txt
+
+commit fc3e683090a9c9285a84d31c1f20d6f138c0ba49
+Merge: 4ea03e1 cd92e7c
+Author: kharya0 <kkdvillegas@gmail.com>
+Date:   Mon Feb 26 11:17:27 2018 +0800
+
+    Merge branch 'master' of https://github.com/rammaria/WebTechLec1
+
+commit 4ea03e143867ddcf1db702f04ea76ddff36965ab
+Author: kharya0 <kkdvillegas@gmail.com>
+Date:   Mon Feb 26 11:17:18 2018 +0800
+
+    Added http methods
+
+commit cd92e7c914a9888f32167deac66eb84a02b13698
+Author: unknown <2159155@slu.edu.ph>
+Date:   Mon Feb 26 11:11:42 2018 +0800
+
+    Added quiz
+
+commit 4a64bbe3ba4217262de51c7b41ee761550d73c9b
+Merge: 18ba063 590b122
+Author: kharya0 <kkdvillegas@gmail.com>
+Date:   Mon Feb 26 09:12:22 2018 +0800
+
+    Merge branch 'master' of https://github.com/rammaria/WebTechLec1
+
+commit 18ba06363fdd18c7aa22d62687db89f35425bbd8
+Author: kharya0 <kkdvillegas@gmail.com>
+Date:   Mon Feb 26 09:12:12 2018 +0800
+
+    Added information for req messages
+
+commit 590b1226ed293e00de21d0806063345183acc549
+Author: rammaria <rammariadvincula@gmail.com>
+Date:   Mon Feb 26 09:07:55 2018 +0800
+
+    Added terms in glossary
+
+commit 3577dc35eab268efd501bc7cfe43d4e2d074ea39
+Author: rammaria <rammariadvincula@gmail.com>
+Date:   Mon Feb 26 02:37:47 2018 +0800
+
+    Added glossary.html and WWW content
+
+commit f6964c4bb6f8ec4b795a342d050d4df59655ae4e
+Author: rammaria <rammariadvincula@gmail.com>
+Date:   Mon Feb 26 00:26:14 2018 +0800
+
+    Added topics and links
+
+commit 00a7a56196fbc02bd6cf658573d16cc827a61aff
+Author: Louel Lagasca <2166253@slu.edu.ph>
+Date:   Sun Feb 25 20:00:40 2018 +0800
+
+    Added information on HTML from 1.0 - 3.2
+
+commit 151522a265f2902b0ebb84d80da218579a082a91
+Author: rammaria <rammariadvincula@gmail.com>
+Date:   Fri Feb 16 22:46:22 2018 +0800
+
+    Added topics
+
+commit 1e3d1f13fdafa1aefba20c3931b94d6cce3c7fd0
+Author: rammaria <rammariadvincula@gmail.com>
+Date:   Thu Feb 15 00:15:46 2018 +0800
+
+    Created initial HTML files
+
+commit 6af6b58e9137371050d4880393c0f0c298cc7837
+Author: kharya0 <kkdvillegas@gmail.com>
+Date:   Mon Feb 12 01:54:12 2018 +0800
+
+    Added paragraphs on Film
+
+commit 545b0a70a66d78cbabd53f01ca4e2e226dce0f82
+Author: rammaria <rammariadvincula@gmail.com>
+Date:   Sat Feb 10 00:13:17 2018 +0800
+
+    Added the essay file
+
+commit dbdc5c848fe299f6d2d940396057dc082a4bcaa8
+Author: Rammaria Paula Advincula <33017548+rammaria@users.noreply.github.com>
+Date:   Sun Feb 4 18:31:30 2018 +0800
+
+    Initial commit

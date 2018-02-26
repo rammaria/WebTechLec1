@@ -26,7 +26,7 @@ nav .dropdown{
 }
 
 nav .dropdown .dropdown-button:hover + .dropdown-content{
-    height: 100%;
+    height: auto;
 }
 
 nav .dropdown-content{
@@ -38,7 +38,7 @@ nav .dropdown-content{
 }
 
 nav .dropdown-content:hover{
-    height: 100%;
+    height: auto;
 }
 
 nav .dropdown-content a{

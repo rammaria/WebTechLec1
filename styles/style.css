@@ -3,11 +3,19 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-.hero-banner {
-    height: 50vh;
+#hero-banner {
+    height: 75vh;
     width: 100%;
     background: black;
     color: white;
+    display: table;
+    text-align: center;
+}
+
+#hero-banner #heading{
+    margin: 0;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 #ans{

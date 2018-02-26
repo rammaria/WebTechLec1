@@ -6,6 +6,14 @@
     <link rel="stylesheet" type="text/css" href="../styles/style.css">
     <link rel="stylesheet" type="text/css" href="../styles/nav.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="../scripts/jquery-3.2.1.min.js"></script>
+    <script src="../scripts/parallax.js"></script>
+    <script>
+        $().ready(function(){
+            var scene = $('#hero-banner .wrapper').get(0);
+            var parallaxInstance = new Parallax(scene);
+        });
+    </script>
 </head>
 
     <body>
@@ -28,12 +36,16 @@
             </ul>   
         </nav>
         
-        <div class="hero-banner">
-            <h1>Web Systems and Technologies</h1>
+        <div id="hero-banner">
+            <div class = "wrapper">
+                <div id = "heading" data-depth = "0.1" >
+                    <h1>Web Systems and Technologies</h1>
+                </div>
+            </div>
         </div>
             
         <div class="page-content">  
-            <p>Welcome to Web System and Technologies!</p>
+            <p>Welcome to Web System and Technologies! This website will help you learn more about the web and its fundamentals. Have fun!</p>
         </div>
     </body>
 
