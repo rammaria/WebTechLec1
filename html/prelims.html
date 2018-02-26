@@ -4,6 +4,8 @@
 <head>
     <title>Web Systems and Technologies</title>
     <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <link rel="stylesheet" type="text/css" href="../styles/nav.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 
 
@@ -54,16 +56,15 @@
                 </ul>
             </ul>
         </div>
-
-        <!--Mapaul-->
+        
         <div id="www"><a name="www"></a>
             <h3>Overview of WWW and Web Technologies</h3>
             <h4>WWW</h4>
             <p>World Wide Web, also widely known as WWW, Web, or W3, is an application that has collections of information accessed through the Internet. Tim Berners-Lee, director of W3C, developed the World Wide Web and launched it in mid-1991. The main purpose of this application was to provide a platform for scientists to share their scientific papers and experiments. In the present time, the World Wide Web is very successful in enabling the convenience of sharing information to everyone.</p>
 
             <p>World Wide Web communicates using the client-server network architecture. Web servers such as Apache HTTP Server and Microsoft IIS host the web sources available on the World Wide Web, and provides content to the clients. Web browsers such as Google Chrome and Mozilla Firefox, are clients who make requests from a web server.</p>
-
-            <h4>Protocols</h4>
+            
+            <h4>Other Terminologies</h4>
             <h5>URL</h5><a name="URL"></a>
             <p>Uniform Resource Locators or URL is a unique address that identifies the location of a specific web resource on the Internet. To know more about the common requirements for the URL, visit <a href="https://www.w3.org/Addressing/URL/3_Requirements.html">W3C</a>.</p>
 
@@ -73,7 +74,6 @@
             <h5>HTML</h5>
             <p>Hypertext Markup Language or HTML is a markup language that is widely used in creating web pages and alike. HTML is a better version of SGML(Standard Generalized Markup Language). To know more about HTML, see <a href="#html">HTML</a> modules.</p>
 
-            <h4>Other Terminologies</h4>
             <h5>Spider</h5><a name="spider"></a>
             <p>Spider, also known as Web Crawler, is an application programmed to crawl or browse the Web to gather data from different web pages.</p>
 
@@ -91,34 +91,73 @@
             <p>HTTP or Hypertext Transfer Protocol is developed by Tim Berners-Lee at CERN in 1989. HTTP is a communication protocol for applications used to retrieve hypermedia and hypertext resources available on the World Wide Web. A prominent feature of HTTP is its capabality of typing and negotiating. This protocol is standardized by W3C and IETF. <a name="w3c"></a>World Wide Web Consortium, also known as W3C, specifies the standards of the web. While the <a name="ietf"></a>Internet Engineering Task Force or IETF is an organization that specifies the standards of the Internet protocols such as TCP/IP.</p>
 
             <h4>HTTP Version History</h4>
-            <h3>HTTP/0.9<a name="http09"></a></h3>
+            <h5>HTTP/0.9<a name="http09"></a></h5>
             <p>This version is also known as "The One-Line Protocol" since its request message contains only single line. As the first version of HTTP, it only has one method, GET, which is composed of the method name GET, and then followed by path of the resource requested. The GET method returns the information from the indicated resource path. HTTP/0.9 also processes the communication between client and server using a single connection. The client connects with the server, and then sends a request. Once the response is sent, the connection will terminate.</p>
 
-            <h3>HTTP/1.0<a name="http1"></a></h3>
+            <h5>HTTP/1.0<a name="http1"></a></h5>
             <p>This version already supports the following three methods: GET, HEAD, and POST. HTTP/1.0 differs from its predecessor because it may follow the conventions of full-request and full-response messages rather than single line. The full-request and full-request messages may inlude optional headers, but it must have an entity body. In addition to the previous version, HTTP/1.0 supports additional character sets.</p>
 
             <p>HTTP/1.0 is documented in <a href="https://www.ietf.org/rfc/rfc1945.txt">RFC 1945</a> on May 1996</p>
 
-            <h3>HTTP/1.1<a name="http11"></a></h3>
+            <h5>HTTP/1.1<a name="http11"></a></h5>
             <p>HTTP/1.1 communicates using persistent connection. Persistent connection allows the connection between the client and server to continue until there is a close signal for the TCP connection. This eliminates the hassle of making multiple request from same server. This version has five additional methods. These methods are DELETE, PUT, TRACE, CONNECT.</p>
 
             <p>HTTP/1.1 is documented in <a href="https://tools.ietf.org/html/rfc2068.html">RFC 2068</a> published on January 1997<a href="https://tools.ietf.org/html/rfc2616">RFC 2616</a> published on June 1999 and <a href="https://tools.ietf.org/html/rfc7230">RFC 7230</a>, <a href="https://tools.ietf.org/html/rfc7231">RFC 7231</a>, <a href="https://tools.ietf.org/html/rfc7232">RFC 7232</a>, <a href="https://tools.ietf.org/html/rfc7233">RFC 7233</a>, <a href="https://tools.ietf.org/html/rfc7232">RFC 7234</a>, <a href="https://tools.ietf.org/html/rfc7233">RFC 7235</a> published on June 2014. RFC 2616 became obsolete since RFC 7230-7235 were published. They have the similar content, but the newer documentation is separated by topics.</p>
 
-            <h3>HTTP/2<a name="http2"></a></h3>
-            <p>HTTP/2 is only an alternative version, and it does not replace its predecessor, HTTP/1.1. It is an improved version of HTTP/1.1 because it is capable of retrieving web sources at a faster speed.</p>
+            <h5>HTTP/2<a name="http2"></a></h5>
+            <p>HTTP/2 is only an alternative version, and it does not replace its predecessor, HTTP/1.1. It is an improved version of HTTP/1.1 because it is capable of retrieving web sources at a faster speed. In this version, latency is reduced because because compression of headers is already possible. Multiplexing is another main feature added to HTTP/2. Multiplexing allows to send multiple HTTP requests and receives responses one at a time. </p>
 
             <p>HTTP/2 is documented in <a href="https://tools.ietf.org/html/rfc7540.html">RFC 7540</a> published on May 2015</p>
         </div>
 
         <div id="http-fundamentals">
             <h4>HTTP Fundamentals</h4><a name="http-fund"></a>
+            
+            <p>Acknowledging the fundamentals of HTTP will contribute to a better understanding of the protocol. In this section, the basics of HTTP will be discussed.</p>
+            
+            <p>HTTP runs on Transmission Control Protocol/Internet Protocol or commonly known as TCP/IP. The default TCP port for HTTP is port 80, and port 443 for HTTPS.</p>
+        
+            <p>HTTP is based on a client-server architecture. A server is the origin of resources and manages the requests. While a client is any user agent (web browsers, spider, other web applications) that makes request to retrieve resources. HTTP will not function if the client or server does not exist.</p>
+            
+            <p>HTTP is based on a client-server architecture. A server is the origin of resources and manages the requests. While a client is any user agent (web browsers, spider, other web applications) that makes request to retrieve resources. HTTP will not function if the client or server does not exist.</p>
+            
+            <p>HTTP is stateless protocol. This means that the server does not store information in between requests. The server only focuses on providing responses to the client.</p>
+            
+            <p>The protocols different capabilities made it possible to support the following features:</p>
+            <ul>
+                <li>Content Negotiation - Selection of the most suitable available resource from the server to the client. </li>
+                <li>Multiplexing - It allows to send multiple HTTP requests and receives responses one at a time.</li>
+                <li>Authentication/Authorization - Manages security by setting access privileges and other methods.</li>
+                <li>Content/Transfer codings - HTTP provides the option to control transformation using compression.</li>
+                <li>Cache Control - Stores temporary data so that the browser does not need to wait for the server to deliver the response.</li>
+                <li>Language and character set - Different options of Language and character sets are supported in HTTP</li>
+                <li>Content Media Type - HTTP supports different media type such as JPEG, PNG, GIF, and etc.</li>
+            </ul>
+            
+            
         </div>
 
         <div id="http-resource-addressing"><a name="http-res"></a>
             <h4>HTTP Resource Addressing</h4>
+            <h5>URI<a name="uri"></a></h5>
+            <p>Uniform Resource Identifier or URI is a string of characters that determines a resource. URL and URN are both subsets only of a URI. A URL is a URI that is classified as a locator. A URN is a URI that is classfied as a name. A URI can be either URL, URN, or both.</p>
+            
+            <p>URI has the following syntax:
+            <br> Scheme://Authority@Host:Port/Path?Query#Fragment </p>
+            
+            <p>Scheme - Scheme indicates the associated protocol. It is always followed by a colon. Some schemes requires to have double slash after the colon. The most common example of schemes are HTTP and HTTPS.</p>
+            
+            <p>Authority - This component is composed three parts: optional authentication part, host, and port. The authentication part is for the user information. Then followed by an at sign (@). After the at sign, the host is indicates the domain name or the IP address where the resource is located. Lastly, the authority component may include the port number.</p>
+            
+            
+            <p>Path - The directory path of the actual document.</p>
+            
+            <p>Query - This is an optional component of a URI that normally contains attribute values. It begins with a question mark (?) and uses an ampersand (&) as a delimiter.</p>
+            
+            <p>Fragment Identifier - This is an optional component of a URI that provides the location of another resource. Fragment identifiers begins with a hash (#)</p>
+            
+            <p>The documentation about URI can be found in <a href="https://www.ietf.org/rfc/rfc3986.txt">RFC 3986</a></p>
         </div>
-
-        <!--Kristen-->
 
         <div id="http-request-message"><a name="http-request"></a>
             <h4>HTTP Request Message</h4>
@@ -233,7 +272,8 @@
 
         <div id="http-extensions"><a name="http-extn"></a>
             <h4>HTTP Extensions</h4>
-            <p>Extensions are used to define new request methods, headers and status codes to then be implemented for the servers and/or clients to use. </p>
+            <p>Extensions are used to define new request methods, headers and status codes to then be implemented for the servers and/or clients to use.</p>
+            <h5>Webdav</h5><p>asdf</p>
         </div>
         <!--Louel-->
         <div id="html">
@@ -252,7 +292,7 @@
 
         <div id="html-2.0">
             <h4>HTML 2.0</h4><a name="html2"></a>
-            <p>In 1995, HTML was published as IETF (Internet Engineering Task Force) <a href="https://tools.ietf.org/html/rfc1866">RFC 1866</a> and HTML 2.0 became the standard for HTML and added the following features:</p>
+            <p>In November of 1995, HTML was published as IETF (Internet Engineering Task Force) <a href="https://tools.ietf.org/html/rfc1866">RFC 1866</a>. The explotion of web brrowsers came around this time. One notable browser called Mosaic was the first commercial web browser with a graphical interface developed by Mosaic Communications, Later renamed Netscape Communications. HTML 2.0 became the standard for HTML and added the following features:</p>
             <ul>
                 <li>Form-based file upload <a href="https://tools.ietf.org/html/rfc1867">RFC 1867</a></li>
                 <li>Tables <a href="https://tools.ietf.org/html/rfc1942">RFC 1942</a></li>
@@ -263,19 +303,34 @@
 
         <div id="html-3.2">
             <h4>HTML 3.2</h4><a name="html3.2"></a>
-            <p>In 1997, HTML was published as a W3C Recommendation. This version of HTML was the first developed and standardized exclusively by W3C (World Wide Web Consortium). This was because IETF closed its HTML working group in 1996.</p>
+            <p>In January of 1997, HTML was published as a W3C Recommendation. This version of HTML was the first developed and standardized exclusively by W3C (World Wide Web Consortium). This was because IETF closed its HTML working group in 1996. At this time, the web was becoming more popular and web page creators wanted more abilities to enhance their websites. To satisfy the needs of creators, Netscape provided it's own set of tags that would work only on their browser. Because of this, other browsers tried to follow their example to compete in the market but this resulted in a lack of uniformity where a web page would look good in one browser but bad in another one. This is when HTML 3.0 was introduced that had these abilities natively, but this version was ultimately replaced by HTML 3.2 to standardize HTML and remove browser exclusive tags.</p>
             <ul>
-                <li>Code named WILBUR</li>
+                <li>Code named Wilbur</li>
                 <li>Omitted elements like blink and marquee since they were moving away from the initial purpose of HTML which was to organize not to decorate</li>
             </ul>
         </div>
 
         <div id="html-4.0">
             <h4>HTML 4.0</h4><a name="html4"></a>
+            <p>In December of 1997, HTML was published again as as a W3C recommendation, and in this version, styling was sought to be removed from HTML to be replaced by a new language specifically for it called CSS (Cascading Style Sheets).</p>
+            <ul>
+                <li>Code named Cougar</li>
+                <li>Adopted many browser exclusive visual tags but at the same time sought to phase them out by marking them as deprecated in favor of style sheets</li>
+                <li>Had three variations: 
+                    <ul>
+                        <li>Strict - deprecated elements are forbidden</li>
+                        <li>Transitional - deprecated elements are allowed</li>
+                        <li>Frameset - mostly only frame related elements are allowed</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            
         </div>
 
         <div id="html-4.01">
             <h4>HTML 4.01</h4><a name="html4.1"></a>
+            
         </div>
 
         <div id="xhtml">
@@ -301,6 +356,8 @@
                 <li><a href="https://www.technologyreview.com/s/415460/a-web-spider-for-everyone/">https://www.technologyreview.com/s/415460/a-web-spider-for-everyone/</a></li>
                 <li><a href="https://hpbn.co/brief-history-of-http/">https://hpbn.co/brief-history-of-http/</a></li>
                 <li><a href="https://www.w3.org/Protocols/HTTP/1.0/spec.html">https://www.w3.org/Protocols/HTTP/1.0/spec.html</a></li>
+                <li><a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec12.html">https://www.w3.org/Protocols/rfc2616/rfc2616-sec12.html</a></li>
+                <li><a href="https://www.w3.org/Addressing/">https://www.w3.org/Addressing/</a></li>
                 <li><a href="https://tools.ietf.org/html/rfc2616">https://tools.ietf.org/html/rfc2616</a></li>
                 <li><a href="http://www.informit.com/articles/article.aspx?p=597695&seqNum=2">http://www.informit.com/articles/article.aspx?p=597695&seqNum=2</a></li>
                 <li><a href="https://tools.ietf.org/html/rfc2616#section-9.4">https://tools.ietf.org/html/rfc2616#section-9.4</a></li>
