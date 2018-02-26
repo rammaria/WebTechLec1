@@ -123,74 +123,112 @@
         <div id="http-request-message"><a name="http-request"></a>
             <h4>HTTP Request Message</h4>
             <p>A request message is done by an HTTP client to a server after connection. Requests are done whenever a client needs a specific resource from the server. The request comes in four parts:</p>
-            <ul>
-                <li>
-                    Opening Line
-                    <p>The opening line consists of the <a href="#http-methods">method</a>, the path to the resource(s) needed, known as the the Uniform Resource Identifier (URI) and the HTTP version used.</p>
-                </li>
-                <li>
-                    Header Lines
-                    <p>Header lines are used to give information about the request. It has single lines of parameters and their value.</p>
-                </li>
-                <li>A blank line</li>
-                <li>Actual body of the message (optional)</li>
-            </ul>
+            
+            <h5>Opening Line</h5>
+            <p>The opening line consists of the <a href="#http-methods">method</a>, the path to the resource(s) needed, known as the the Uniform Resource Identifier (URI) and the HTTP version used.</p>
+            
+            <h5>Header Lines</h5>
+            <p>Header lines are used to give information about the request. It has single lines of parameters and their value.</p>
+            <h5>A blank line</h5>
+            <h5>Actual body of the message (optional)</h5>
         </div>
 
         <div id="http-response-message"><a name="http-response"></a>
             <h4>HTTP Response Message</h4>
-            <p>Sent by the server to the HTTP client after a request, the first line of the message is called the status line. The status line is composed of the HTTP server version used and a response status code. The response message also comes with header fields, if there are any.</p>
+            <p>Sent by the server to the HTTP client after a request, the first line of the message is called the status line. The status line is composed of the HTTP server version used and a response status code. The response message also comes with header fields, if there are any, an empty line and an optional body of the message.</p>
             
             <h5>Response Status Codes</h5>
+            <div id="status codes">
                 <ul>
                     <li>1** - Informational</li>
+                        <ul>
+                            <li>100 - Continue</li>
+                            <li>101 - Switching Protocols</li>
+                        </ul>
                     <li>2** - Successful</li>
+                        <ul>
+                            <li>200 OK</li>
+                            <li>201 Created </li>
+                            <li>202 Accepted </li>
+                            <li>203 Non-Autorative Information </li>
+                            <li>204 No Content </li>
+                            <li>205 Reset Content </li>
+                            <li>206 Partial Content </li>
+                        </ul>
                     <li>3** - Redirection</li>
+                        <ul>
+                            <li>300 Multiple Choices</li>
+                            <li>301 Moved Permanently</li>
+                            <li>302 Found</li>
+                            <li>303 See Other</li>
+                            <li>304 Not Modified</li>
+                            <li>305 Use Proxy</li>
+                            <li>306 (Unused)</li>
+                            <li>307 Temporary Redirect</li>
+                        </ul>
                     <li>4** - Client Error</li>
+                        <ul>
+                            <li>400 Bad Request</li>
+                            <li>401 Unauthorized</li>
+                            <li>402 Payment Required</li>
+                            <li>403 Forbidden</li>
+                            <li>404 Not Found</li>
+                            <li>405 Method Not Allowed</li>
+                            <li>406 Not Acceptable</li>
+                            <li>407 Proxy Authentication Required</li>
+                            <li>408 Request Timeout</li>
+                            <li>409 Conflict</li>
+                            <li>410 Gone</li>
+                            <li>411 Length Required</li>
+                            <li>412 Precondition Failed</li>
+                            <li>413 Request Entity Too Large</li>
+                            <li>414 Request-URI Too Long</li>
+                            <li>415 Unsupported Media Type</li>
+                            <li>416 Requested Range Not Satisfiable</li>
+                            <li>417 Expectation Failed</li>
+                        </ul>
                     <li>5** - Server Error</li>
+                        <ul>
+                            <li>500 Internal Server Error</li>
+                            <li>501 Not Implemented</li>
+                            <li>502 Bad Gateway</li>
+                            <li>503 Service Unavailable</li>
+                            <li>504 Gateway Timeout</li>
+                            <li>505 HTTP Version Not Supported</li>
+                        </ul>
                 </ul>
+                <p>To know more in-depth information about the status codes, visit <a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html</a></p>
+            </div>
         </div>
 
         <div id="http-methods"><a name="http-methods"></a>
             <h4>HTTP Methods</h4>
-            <ul>
-                <li>
-                    <a name="get">GET</a>
+                    <h5><a name="get">GET</a></h5>
                     <p>Used to retrieve data and body from the URI specified. If the URI given produces data, only the product of the process will be returned.</p>
-                </li>
-                <li>
-                    <a name="head">HEAD</a>
+            
+                    <h5><a name="head">HEAD</a></h5>
                     <p>The head method does what the GET method does too, however, it does not return a body in the response message.</p>
-                </li>
-                <li>
-                    <a name="post">POST</a>
+                
+                    <h5><a name="post">POST</a></h5>
                     <p>Used when the client wishes to submit an entity to the server for it to be applied to the specified URI. Puts data in the request message body in processed HTML form data.</p>
-                </li>
-                <li>
-                    <a name="put">PUT</a>
+            
+                    <h5><a name="put">PUT</a></h5>
                     <p>This method works just like POST, however, the entity given by the client is asked to be stored in the URI. Most servers do not support this method.</p>
-                </li>
-                <li>
-                    <a name="delete">DELETE</a>
+                
+                    <h5><a name="delete">DELETE</a></h5>
                     <p>A request to delete/remove the resource specified in the URI. Most servers also do not allow this method to be used.</p>
-                </li>
-                <li>
-                    <a name="connect">CONNECT</a>
+                
+                    <h5><a name="connect">CONNECT</a></h5>
                     <p>This method creates a tunnel to the server specified in the URI.</p>
-                </li>
-                <li>
-                    <a name="options">OPTIONS</a>
+                
+                    <h5><a name="options">OPTIONS</a></h5>
                     <p>Requests information on the methods allowed in the specifed URI.</p>
-                </li>
-                <li>
-                    <a name="trace">TRACE</a>
+                
+                    <h5><a name="trace">TRACE</a></h5>
                     <p>This method requests a loop-back of request messages in the identified URI.</p>
-                </li>
-                <li>
-                    <a name="patch">PATCH</a>
+                
+                    <h5><a name="patch">PATCH</a></h5>
                     <p>This method applies small modifications to the specified URI.</p>
-                </li>
-            </ul>
         </div>
 
         <div id="http-extensions"><a name="http-extn"></a>
@@ -282,6 +320,7 @@
                 <li><a href="http://www.informit.com/articles/article.aspx?p=597695&seqNum=2">http://www.informit.com/articles/article.aspx?p=597695&seqNum=2</a></li>
                 <li><a href="https://tools.ietf.org/html/rfc2616#section-9.4">https://tools.ietf.org/html/rfc2616#section-9.4</a></li>
                 <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods">https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods</a></li>
+                <li><a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html</a></li>
             </ul>
         </div>
 
