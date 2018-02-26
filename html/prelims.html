@@ -68,10 +68,10 @@
             <p>Uniform Resource Locators or URL is a unique address that identifies the location of a specific web resource on the Internet. To know more about the common requirements for the URL, visit <a href="https://www.w3.org/Addressing/URL/3_Requirements.html">W3C</a>.</p>
 
             <h5>HTTP</h5>
-            <p>Hypertext Transfer Protocol or HTTP is the base communication protocol of the World Wide Web. HTTP defines how messages between clients and servers are transferred and formatted. To know more about HTTP, see <a href="http">HTTP</a> modules.</p>
+            <p>Hypertext Transfer Protocol or HTTP is the base communication protocol of the World Wide Web. HTTP defines how messages between clients and servers are transferred and formatted. To know more about HTTP, see <a href="#http">HTTP</a> modules.</p>
             
             <h5>HTML</h5>
-            <p>Hypertext Markup Language or HTML is a markup language that is widely used in creating web pages and alike. HTML is a better version of SGML(Standard Generalized Markup Language). To know more about HTML, see <a href="http">HTML</a> modules.</p> 
+            <p>Hypertext Markup Language or HTML is a markup language that is widely used in creating web pages and alike. HTML is a better version of SGML(Standard Generalized Markup Language). To know more about HTML, see <a href="#html">HTML</a> modules.</p> 
             
              <h4>Other Terminologies</h4>
             <h5>Spider</h5><a name="spider"></a>
@@ -105,40 +105,67 @@
                 <ul>
                     <li>
                         Opening Line
-                        <p>The opening line consists of the method, the path to the resource(s) needed and the HTTP version used.</p>
-                        
+                        <p>The opening line consists of the <a href="#http-methods">method</a>, the path to the resource(s) needed, known as the the Uniform Resource Identifier (URI) and the HTTP version used.</p>
                     </li>
                     <li>
                         Header Lines
                         <p>Header lines are used to give information about the request. It has single lines of parameters and their value.</p>
                     </li>
                     <li>A blank line</li>
-                    <li>Actual body of the message (payload)</li>
+                    <li>Actual body of the message (optional)</li>
                 </ul>
             </div>
 
             <div id="http-response-message"><a name="http-response"></a>
                 <h4>HTTP Response Message</h4>
+                <p>Sent by the server to the HTTP client after a request.</p>
             </div>
 
             <div id="http-methods"><a name="http-methods"></a>
                 <h4>HTTP Methods</h4>
                 <ul>
-                    <li>GET</li>
-                    <li>HEAD</li>
-                    <li>POST</li>
-                    <li>PUT</li>
-                    <li>DELETE</li>
-                    <li>CONNECT</li>
-                    <li>OPTIONS</li>
-                    <li>TRACE</li>
-                    <li>PATCH</li>
+                    <li>
+                        <a name="get">GET</a>
+                        <p>Used to retrieve data and body from the URI specified. If the URI given produces data, only the product of the process will be returned.</p>
+                    </li>
+                    <li>
+                        <a name="head">HEAD</a>
+                        <p>The head method does what the GET method does too, however, it does not return a body in the response message.</p>
+                    </li>
+                    <li>
+                        <a name="post">POST</a>
+                        <p>Used when the client wishes to submit an entity to the server for it to be applied to the specified URI. Puts data in the request message body in processed HTML form data.</p>
+                    </li>
+                    <li>
+                        <a name="put">PUT</a>
+                        <p>This method works just like POST, however, the entity given by the client is asked to be stored in the URI. Most servers do not support this method.</p>
+                    </li>
+                    <li>
+                        <a name="delete">DELETE</a>
+                        <p>A request to delete/remove the resource specified in the URI. Most servers also do not allow this method to be used.</p>
+                    </li>
+                    <li>
+                        <a name="connect">CONNECT</a>
+                        <p>This method creates a tunnel to the server specified in the URI.</p>
+                    </li>
+                    <li>
+                        <a name="options">OPTIONS</a>
+                        <p>Requests information on the methods allowed in the specifed URI.</p>
+                    </li>
+                    <li>
+                        <a name="trace">TRACE</a>
+                        <p>This method requests a loop-back of request messages in the identified URI.</p>
+                    </li>
+                    <li>
+                        <a name="patch">PATCH</a>
+                        <p>This method applies small modifications to the specified URI.</p>
+                    </li>
                 </ul>
             </div>
 
             <div id="http-extensions"><a name="http-extn"></a>
                 <h4>HTTP Extensions</h4>
-                <p>Extensions are use to define new request methods, headers and status codes. </p>
+                <p>Extensions are used to define new request methods, headers and status codes to then be implemented for the servers and/or clients to use. </p>
             </div>
             <!--Louel-->
             <div id="html">
@@ -198,11 +225,16 @@
             <!--Add your references here-->
             <div class="references">
                 <h3>References</h3>
-                <a href="https://www.w3.org/WWW/">https://www.w3.org/WWW/</a>
-                <a href="<a href=" https://www.w3.org/WWW/ ">">https://www.w3.org/Talks/General/Protocols.html</a>
-                <a href="https://www.w3.org/Talks/General/URL.html">https://www.w3.org/Talks/General/URL.html</a>
-                <a href="https://www.w3.org/Talks/HTML.html">https://www.w3.org/Talks/HTML.html</a>
-                <a href="https://www.technologyreview.com/s/415460/a-web-spider-for-everyone/">https://www.technologyreview.com/s/415460/a-web-spider-for-everyone/</a>
+                <ul>
+                    <li><a href="https://www.w3.org/WWW/">https://www.w3.org/WWW/</a></li>
+                    <li><a href="https://www.w3.org/WWW/">https://www.w3.org/Talks/General/Protocols.html</a></li>
+                    <li><a href="https://www.w3.org/Talks/General/URL.html">https://www.w3.org/Talks/General/URL.html</a></li>
+                    <li><a href="https://www.w3.org/Talks/HTML.html">https://www.w3.org/Talks/HTML.html</a></li>
+                    <li><a href="https://www.technologyreview.com/s/415460/a-web-spider-for-everyone/">https://www.technologyreview.com/s/415460/a-web-spider-for-everyone/</a></li>
+                    <li><a href="http://www.informit.com/articles/article.aspx?p=597695&seqNum=2">http://www.informit.com/articles/article.aspx?p=597695&seqNum=2</a></li>
+                    <li><a href="https://tools.ietf.org/html/rfc2616#section-9.4">https://tools.ietf.org/html/rfc2616#section-9.4</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods">https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods</a></li>
+                </ul>
             </div>
 
         </div>
