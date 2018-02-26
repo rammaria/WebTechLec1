@@ -139,7 +139,16 @@
 
         <div id="http-response-message"><a name="http-response"></a>
             <h4>HTTP Response Message</h4>
-            <p>Sent by the server to the HTTP client after a request.</p>
+            <p>Sent by the server to the HTTP client after a request, the first line of the message is called the status line. The status line is composed of the HTTP server version used and a response status code. The response message also comes with header fields, if there are any.</p>
+            
+            <h5>Response Status Codes</h5>
+                <ul>
+                    <li>1** - Informational</li>
+                    <li>2** - Successful</li>
+                    <li>3** - Redirection</li>
+                    <li>4** - Client Error</li>
+                    <li>5** - Server Error</li>
+                </ul>
         </div>
 
         <div id="http-methods"><a name="http-methods"></a>
