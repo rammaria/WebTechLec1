@@ -69,175 +69,199 @@
 
             <h5>HTTP</h5>
             <p>Hypertext Transfer Protocol or HTTP is the base communication protocol of the World Wide Web. HTTP defines how messages between clients and servers are transferred and formatted. To know more about HTTP, see <a href="#http">HTTP</a> modules.</p>
-            
+
             <h5>HTML</h5>
-            <p>Hypertext Markup Language or HTML is a markup language that is widely used in creating web pages and alike. HTML is a better version of SGML(Standard Generalized Markup Language). To know more about HTML, see <a href="#html">HTML</a> modules.</p> 
-            
-             <h4>Other Terminologies</h4>
+            <p>Hypertext Markup Language or HTML is a markup language that is widely used in creating web pages and alike. HTML is a better version of SGML(Standard Generalized Markup Language). To know more about HTML, see <a href="#html">HTML</a> modules.</p>
+
+            <h4>Other Terminologies</h4>
             <h5>Spider</h5><a name="spider"></a>
             <p>Spider, also known as Web Crawler, is an application programmed to crawl or browse the Web to gather data from different web pages.</p>
-            
+
             <h5>Internet</h5><a name="internet"></a>
-            <p>The Internet is a very large network that is composed of interconnected networks around the world. There are different applications that are available on the Internet. An example of this is the World Wide Web.<p>
-            
-            <h5>Network</h5><a name="network"></a>
-            <p>A network is a connection of computers, servers and intermediary devices that facilitates electronic communication.<p>
+            <p>The Internet is a very large network that is composed of interconnected networks around the world. There are different applications that are available on the Internet. An example of this is the World Wide Web.
+                <p>
+
+                    <h5>Network</h5><a name="network"></a>
+                    <p>A network is a connection of computers, servers and intermediary devices that facilitates electronic communication.
+                        <p>
         </div>
-        
-            <div id="http">
-                <h3>HTTP</h3><a name="http"></a>
-                <p>HTTP or Hypertext Transfer Protocol is developed by Tim Berners-Lee at CERN in 1989.</p>
-            </div>
 
-            <div id="http-fundamentals">
-                <h4>HTTP Fundamentals</h4><a name="http-fund"></a>
-            </div>
+        <div id="http">
+            <h3>HTTP</h3><a name="http"></a>
+            <p>HTTP or Hypertext Transfer Protocol is developed by Tim Berners-Lee at CERN in 1989. HTTP is a communication protocol for applications used to retrieve hypermedia and hypertext resources available on the World Wide Web. A prominent feature of HTTP is its capabality of typing and negotiating. This protocol is standardized by W3C and IETF. <a name="w3c"></a>World Wide Web Consortium, also known as W3C, specifies the standards of the web. While the <a name="ietf"></a>Internet Engineering Task Force or IETF is an organization that specifies the standards of the Internet protocols such as TCP/IP.</p>
 
-            <div id="http-resource-addressing"><a name="http-res"></a>
-                <h4>HTTP Resource Addressing</h4>
-            </div>
+            <h4>HTTP Version History</h4>
+            <h3>HTTP/0.9<a name="http09"></a></h3>
+            <p>This version is also known as "The One-Line Protocol" since its request message contains only single line. As the first version of HTTP, it only has one method, GET, which is composed of the method name GET, and then followed by path of the resource requested. The GET method returns the information from the indicated resource path. HTTP/0.9 also processes the communication between client and server using a single connection. The client connects with the server, and then sends a request. Once the response is sent, the connection will terminate.</p>
 
-            <!--Kristen-->
+            <h3>HTTP/1.0<a name="http1"></a></h3>
+            <p>This version already supports the following three methods: GET, HEAD, and POST. HTTP/1.0 differs from its predecessor because it may follow the conventions of full-request and full-response messages rather than single line. The full-request and full-request messages may inlude optional headers, but it must have an entity body. In addition to the previous version, HTTP/1.0 supports additional character sets.</p>
 
-            <div id="http-request-message"><a name="http-request"></a>
-                <h4>HTTP Request Message</h4>
-                <p>A request message is done by an HTTP client to a server after connection. Requests are done whenever a client needs a specific resource from the server. The request comes in four parts:</p>
-                <ul>
-                    <li>
-                        Opening Line
-                        <p>The opening line consists of the <a href="#http-methods">method</a>, the path to the resource(s) needed, known as the the Uniform Resource Identifier (URI) and the HTTP version used.</p>
-                    </li>
-                    <li>
-                        Header Lines
-                        <p>Header lines are used to give information about the request. It has single lines of parameters and their value.</p>
-                    </li>
-                    <li>A blank line</li>
-                    <li>Actual body of the message (optional)</li>
-                </ul>
-            </div>
+            <p>HTTP/1.0 is documented in <a href="https://www.ietf.org/rfc/rfc1945.txt">RFC 1945</a> on May 1996</p>
 
-            <div id="http-response-message"><a name="http-response"></a>
-                <h4>HTTP Response Message</h4>
-                <p>Sent by the server to the HTTP client after a request.</p>
-            </div>
+            <h3>HTTP/1.1<a name="http11"></a></h3>
+            <p>HTTP/1.1 communicates using persistent connection. Persistent connection allows the connection between the client and server to continue until there is a close signal for the TCP connection. This eliminates the hassle of making multiple request from same server. This version has five additional methods. These methods are DELETE, PUT, TRACE, CONNECT.</p>
 
-            <div id="http-methods"><a name="http-methods"></a>
-                <h4>HTTP Methods</h4>
-                <ul>
-                    <li>
-                        <a name="get">GET</a>
-                        <p>Used to retrieve data and body from the URI specified. If the URI given produces data, only the product of the process will be returned.</p>
-                    </li>
-                    <li>
-                        <a name="head">HEAD</a>
-                        <p>The head method does what the GET method does too, however, it does not return a body in the response message.</p>
-                    </li>
-                    <li>
-                        <a name="post">POST</a>
-                        <p>Used when the client wishes to submit an entity to the server for it to be applied to the specified URI. Puts data in the request message body in processed HTML form data.</p>
-                    </li>
-                    <li>
-                        <a name="put">PUT</a>
-                        <p>This method works just like POST, however, the entity given by the client is asked to be stored in the URI. Most servers do not support this method.</p>
-                    </li>
-                    <li>
-                        <a name="delete">DELETE</a>
-                        <p>A request to delete/remove the resource specified in the URI. Most servers also do not allow this method to be used.</p>
-                    </li>
-                    <li>
-                        <a name="connect">CONNECT</a>
-                        <p>This method creates a tunnel to the server specified in the URI.</p>
-                    </li>
-                    <li>
-                        <a name="options">OPTIONS</a>
-                        <p>Requests information on the methods allowed in the specifed URI.</p>
-                    </li>
-                    <li>
-                        <a name="trace">TRACE</a>
-                        <p>This method requests a loop-back of request messages in the identified URI.</p>
-                    </li>
-                    <li>
-                        <a name="patch">PATCH</a>
-                        <p>This method applies small modifications to the specified URI.</p>
-                    </li>
-                </ul>
-            </div>
+            <p>HTTP/1.1 is documented in <a href="https://tools.ietf.org/html/rfc2068.html">RFC 2068</a> published on January 1997<a href="https://tools.ietf.org/html/rfc2616">RFC 2616</a> published on June 1999 and <a href="https://tools.ietf.org/html/rfc7230">RFC 7230</a>, <a href="https://tools.ietf.org/html/rfc7231">RFC 7231</a>, <a href="https://tools.ietf.org/html/rfc7232">RFC 7232</a>, <a href="https://tools.ietf.org/html/rfc7233">RFC 7233</a>, <a href="https://tools.ietf.org/html/rfc7232">RFC 7234</a>, <a href="https://tools.ietf.org/html/rfc7233">RFC 7235</a> published on June 2014. RFC 2616 became obsolete since RFC 7230-7235 were published. They have the similar content, but the newer documentation is separated by topics.</p>
 
-            <div id="http-extensions"><a name="http-extn"></a>
-                <h4>HTTP Extensions</h4>
-                <p>Extensions are used to define new request methods, headers and status codes to then be implemented for the servers and/or clients to use. </p>
-            </div>
-            <!--Louel-->
-            <div id="html">
-                <h3>HTML</h3><a name="html"></a>
-                <p>HTML (HyperText Markup Language) is a coding system that is standardized for defining, presenting, and formatting the content of a web page. The specific parts of the code that pertain to formatting are called elements and these elements are enclosed by tags. These tags are delimited by opening and closing angle brackets and they mark parts of the code to define what kind that content is. As for the structure of these tags, most of them are written in pairs having the starting and ending tags, while some only having a starting tag, and others having the ending tag optional. </p>
-            </div>
+            <h3>HTTP/2<a name="http2"></a></h3>
+            <p>HTTP/2 is only an alternative version, and it does not replace its predecessor, HTTP/1.1. It is an improved version of HTTP/1.1 because it is capable of retrieving web sources at a faster speed.</p>
 
-            <div id="html-1.0">
-                <h4>HTML 1.0</h4><a name="html1"></a>
-                <p>In 1991, HTML was first introduced by Tim Berners-Lee as an application of SGML (Standard Generalized Markup Language) that included hypertext with the "href" attribute that enabled text to reference other documents to be easily accessed by the reader with one click.</p>
-                <ul>
-                    <li>Only had 20 elements (&lt;A&gt;, &lt;P&gt;, &lt;LI&gt;, &lt;UL&gt;, &lt;TITLE&gt;, &lt;H1&gt;...&lt;H6&gt;, etc.)</li>
-                    <li>Influenced the creation of the first Web Browser created by Berners-Lee called WorldWideWeb, later renamed Nexus</li>
-                </ul>
-            </div>
-
-            <div id="html-2.0">
-                <h4>HTML 2.0</h4><a name="html2"></a>
-                <p>In 1995, HTML was published as IETF (Internet Engineering Task Force) <a href="https://tools.ietf.org/html/rfc1866">RFC 1866</a> and HTML 2.0 became the standard for HTML and added the following features:</p>
-                <ul>
-                    <li>Form-based file upload <a href="https://tools.ietf.org/html/rfc1867">RFC 1867</a></li>
-                    <li>Tables <a href="https://tools.ietf.org/html/rfc1942">RFC 1942</a></li>
-                    <li>Client-side image maps <a href="https://tools.ietf.org/html/rfc1980">RFC 1980</a></li>
-                    <li>Internationalization <a href="https://tools.ietf.org/html/rfc2070">RFC 2070</a></li>
-                </ul>
-            </div>
-
-            <div id="html-3.2">
-                <h4>HTML 3.2</h4><a name="html3.2"></a>
-                <p>In 1997, HTML was published as a W3C Recommendation. This version of HTML was the first developed and standardized exclusively by W3C (World Wide Web Consortium). This was because IETF closed its HTML working group in 1996.</p>
-                <ul>
-                    <li>Code named WILBUR</li>
-                    <li>Omitted elements like blink and marquee since they were moving away from the initial purpose of HTML which was to organize not to decorate</li>
-                </ul>
-            </div>
-
-            <div id="html-4.0">
-                <h4>HTML 4.0</h4><a name="html4"></a>
-            </div>
-
-            <div id="html-4.01">
-                <h4>HTML 4.01</h4><a name="html4.1"></a>
-            </div>
-
-            <div id="xhtml">
-                <h4>XHTML</h4><a name="xhtml"></a>
-            </div>
-
-            <div id="html-5">
-                <h4>HTML 5</h4><a name="html5"></a>
-            </div>
-
-            <div id="html-preprocessors">
-                <h4>HTML Preprocessors</h4><a name="html-preprocessors"></a>
-            </div>
-
-            <!--Add your references here-->
-            <div class="references">
-                <h3>References</h3>
-                <ul>
-                    <li><a href="https://www.w3.org/WWW/">https://www.w3.org/WWW/</a></li>
-                    <li><a href="https://www.w3.org/WWW/">https://www.w3.org/Talks/General/Protocols.html</a></li>
-                    <li><a href="https://www.w3.org/Talks/General/URL.html">https://www.w3.org/Talks/General/URL.html</a></li>
-                    <li><a href="https://www.w3.org/Talks/HTML.html">https://www.w3.org/Talks/HTML.html</a></li>
-                    <li><a href="https://www.technologyreview.com/s/415460/a-web-spider-for-everyone/">https://www.technologyreview.com/s/415460/a-web-spider-for-everyone/</a></li>
-                    <li><a href="http://www.informit.com/articles/article.aspx?p=597695&seqNum=2">http://www.informit.com/articles/article.aspx?p=597695&seqNum=2</a></li>
-                    <li><a href="https://tools.ietf.org/html/rfc2616#section-9.4">https://tools.ietf.org/html/rfc2616#section-9.4</a></li>
-                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods">https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods</a></li>
-                </ul>
-            </div>
-
+            <p>HTTP/2 is documented in <a href="https://tools.ietf.org/html/rfc7540.html">RFC 7540</a> published on May 2015</p>
         </div>
+
+        <div id="http-fundamentals">
+            <h4>HTTP Fundamentals</h4><a name="http-fund"></a>
+        </div>
+
+        <div id="http-resource-addressing"><a name="http-res"></a>
+            <h4>HTTP Resource Addressing</h4>
+        </div>
+
+        <!--Kristen-->
+
+        <div id="http-request-message"><a name="http-request"></a>
+            <h4>HTTP Request Message</h4>
+            <p>A request message is done by an HTTP client to a server after connection. Requests are done whenever a client needs a specific resource from the server. The request comes in four parts:</p>
+            <ul>
+                <li>
+                    Opening Line
+                    <p>The opening line consists of the <a href="#http-methods">method</a>, the path to the resource(s) needed, known as the the Uniform Resource Identifier (URI) and the HTTP version used.</p>
+                </li>
+                <li>
+                    Header Lines
+                    <p>Header lines are used to give information about the request. It has single lines of parameters and their value.</p>
+                </li>
+                <li>A blank line</li>
+                <li>Actual body of the message (optional)</li>
+            </ul>
+        </div>
+
+        <div id="http-response-message"><a name="http-response"></a>
+            <h4>HTTP Response Message</h4>
+            <p>Sent by the server to the HTTP client after a request.</p>
+        </div>
+
+        <div id="http-methods"><a name="http-methods"></a>
+            <h4>HTTP Methods</h4>
+            <ul>
+                <li>
+                    <a name="get">GET</a>
+                    <p>Used to retrieve data and body from the URI specified. If the URI given produces data, only the product of the process will be returned.</p>
+                </li>
+                <li>
+                    <a name="head">HEAD</a>
+                    <p>The head method does what the GET method does too, however, it does not return a body in the response message.</p>
+                </li>
+                <li>
+                    <a name="post">POST</a>
+                    <p>Used when the client wishes to submit an entity to the server for it to be applied to the specified URI. Puts data in the request message body in processed HTML form data.</p>
+                </li>
+                <li>
+                    <a name="put">PUT</a>
+                    <p>This method works just like POST, however, the entity given by the client is asked to be stored in the URI. Most servers do not support this method.</p>
+                </li>
+                <li>
+                    <a name="delete">DELETE</a>
+                    <p>A request to delete/remove the resource specified in the URI. Most servers also do not allow this method to be used.</p>
+                </li>
+                <li>
+                    <a name="connect">CONNECT</a>
+                    <p>This method creates a tunnel to the server specified in the URI.</p>
+                </li>
+                <li>
+                    <a name="options">OPTIONS</a>
+                    <p>Requests information on the methods allowed in the specifed URI.</p>
+                </li>
+                <li>
+                    <a name="trace">TRACE</a>
+                    <p>This method requests a loop-back of request messages in the identified URI.</p>
+                </li>
+                <li>
+                    <a name="patch">PATCH</a>
+                    <p>This method applies small modifications to the specified URI.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div id="http-extensions"><a name="http-extn"></a>
+            <h4>HTTP Extensions</h4>
+            <p>Extensions are used to define new request methods, headers and status codes to then be implemented for the servers and/or clients to use. </p>
+        </div>
+        <!--Louel-->
+        <div id="html">
+            <h3>HTML</h3><a name="html"></a>
+            <p>HTML (HyperText Markup Language) is a coding system that is standardized for defining, presenting, and formatting the content of a web page. The specific parts of the code that pertain to formatting are called elements and these elements are enclosed by tags. These tags are delimited by opening and closing angle brackets and they mark parts of the code to define what kind that content is. As for the structure of these tags, most of them are written in pairs having the starting and ending tags, while some only having a starting tag, and others having the ending tag optional. </p>
+        </div>
+
+        <div id="html-1.0">
+            <h4>HTML 1.0</h4><a name="html1"></a>
+            <p>In 1991, HTML was first introduced by Tim Berners-Lee as an application of SGML (Standard Generalized Markup Language) that included hypertext with the "href" attribute that enabled text to reference other documents to be easily accessed by the reader with one click.</p>
+            <ul>
+                <li>Only had 20 elements (&lt;A&gt;, &lt;P&gt;, &lt;LI&gt;, &lt;UL&gt;, &lt;TITLE&gt;, &lt;H1&gt;...&lt;H6&gt;, etc.)</li>
+                <li>Influenced the creation of the first Web Browser created by Berners-Lee called WorldWideWeb, later renamed Nexus</li>
+            </ul>
+        </div>
+
+        <div id="html-2.0">
+            <h4>HTML 2.0</h4><a name="html2"></a>
+            <p>In 1995, HTML was published as IETF (Internet Engineering Task Force) <a href="https://tools.ietf.org/html/rfc1866">RFC 1866</a> and HTML 2.0 became the standard for HTML and added the following features:</p>
+            <ul>
+                <li>Form-based file upload <a href="https://tools.ietf.org/html/rfc1867">RFC 1867</a></li>
+                <li>Tables <a href="https://tools.ietf.org/html/rfc1942">RFC 1942</a></li>
+                <li>Client-side image maps <a href="https://tools.ietf.org/html/rfc1980">RFC 1980</a></li>
+                <li>Internationalization <a href="https://tools.ietf.org/html/rfc2070">RFC 2070</a></li>
+            </ul>
+        </div>
+
+        <div id="html-3.2">
+            <h4>HTML 3.2</h4><a name="html3.2"></a>
+            <p>In 1997, HTML was published as a W3C Recommendation. This version of HTML was the first developed and standardized exclusively by W3C (World Wide Web Consortium). This was because IETF closed its HTML working group in 1996.</p>
+            <ul>
+                <li>Code named WILBUR</li>
+                <li>Omitted elements like blink and marquee since they were moving away from the initial purpose of HTML which was to organize not to decorate</li>
+            </ul>
+        </div>
+
+        <div id="html-4.0">
+            <h4>HTML 4.0</h4><a name="html4"></a>
+        </div>
+
+        <div id="html-4.01">
+            <h4>HTML 4.01</h4><a name="html4.1"></a>
+        </div>
+
+        <div id="xhtml">
+            <h4>XHTML</h4><a name="xhtml"></a>
+        </div>
+
+        <div id="html-5">
+            <h4>HTML 5</h4><a name="html5"></a>
+        </div>
+
+        <div id="html-preprocessors">
+            <h4>HTML Preprocessors</h4><a name="html-preprocessors"></a>
+        </div>
+
+        <!--Add your references here-->
+        <div class="references">
+            <h3>References</h3>
+            <ul>
+                <li><a href="https://www.w3.org/WWW/">https://www.w3.org/WWW/</a></li>
+                <li><a href="https://www.w3.org/WWW/">https://www.w3.org/Talks/General/Protocols.html</a></li>
+                <li><a href="https://www.w3.org/Talks/General/URL.html">https://www.w3.org/Talks/General/URL.html</a></li>
+                <li><a href="https://www.w3.org/Talks/HTML.html">https://www.w3.org/Talks/HTML.html</a></li>
+                <li><a href="https://www.technologyreview.com/s/415460/a-web-spider-for-everyone/">https://www.technologyreview.com/s/415460/a-web-spider-for-everyone/</a></li>
+                <li><a href="https://hpbn.co/brief-history-of-http/">https://hpbn.co/brief-history-of-http/</a></li>
+                <li><a href="https://www.w3.org/Protocols/HTTP/1.0/spec.html">https://www.w3.org/Protocols/HTTP/1.0/spec.html</a></li>
+                <li><a href="https://tools.ietf.org/html/rfc2616">https://tools.ietf.org/html/rfc2616</a></li>
+                <li><a href="http://www.informit.com/articles/article.aspx?p=597695&seqNum=2">http://www.informit.com/articles/article.aspx?p=597695&seqNum=2</a></li>
+                <li><a href="https://tools.ietf.org/html/rfc2616#section-9.4">https://tools.ietf.org/html/rfc2616#section-9.4</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods">https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods</a></li>
+            </ul>
+        </div>
+
+    </div>
 </body>
 
 </html>
