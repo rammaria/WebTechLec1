@@ -3,7 +3,7 @@
 
 <head>
     <title>Web Systems and Technologies</title>
-    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <link rel="stylesheet" type="text/css" href="../styles/nav.css">
 </head>
 
 
@@ -105,13 +105,34 @@
             <p>HTTP/1.1 is documented in <a href="https://tools.ietf.org/html/rfc2068.html">RFC 2068</a> published on January 1997<a href="https://tools.ietf.org/html/rfc2616">RFC 2616</a> published on June 1999 and <a href="https://tools.ietf.org/html/rfc7230">RFC 7230</a>, <a href="https://tools.ietf.org/html/rfc7231">RFC 7231</a>, <a href="https://tools.ietf.org/html/rfc7232">RFC 7232</a>, <a href="https://tools.ietf.org/html/rfc7233">RFC 7233</a>, <a href="https://tools.ietf.org/html/rfc7232">RFC 7234</a>, <a href="https://tools.ietf.org/html/rfc7233">RFC 7235</a> published on June 2014. RFC 2616 became obsolete since RFC 7230-7235 were published. They have the similar content, but the newer documentation is separated by topics.</p>
 
             <h3>HTTP/2<a name="http2"></a></h3>
-            <p>HTTP/2 is only an alternative version, and it does not replace its predecessor, HTTP/1.1. It is an improved version of HTTP/1.1 because it is capable of retrieving web sources at a faster speed.</p>
+            <p>HTTP/2 is only an alternative version, and it does not replace its predecessor, HTTP/1.1. It is an improved version of HTTP/1.1 because it is capable of retrieving web sources at a faster speed. In this version, latency is reduced because because compression of headers is already possible. Multiplexing is another main feature added to HTTP/2. Multiplexing allows to send multiple HTTP requests and receives responses one at a time. </p>
 
             <p>HTTP/2 is documented in <a href="https://tools.ietf.org/html/rfc7540.html">RFC 7540</a> published on May 2015</p>
         </div>
 
         <div id="http-fundamentals">
             <h4>HTTP Fundamentals</h4><a name="http-fund"></a>
+            
+            <p>Acknowledging the fundamentals of HTTP will contribute to a better understanding of the protocol. In this section, the basics of HTTP will be discussed.</p>
+            <p>HTTP runs on Transmission Control Protocol/Internet Protocol or commonly known as TCP/IP. The default TCP port for HTTP is port 80, and port 443 for HTTPS.</p>
+            <p>HTTP runs on Transmission Control Protocol/Internet Protocol or commonly known as TCP/IP. The default TCP port for HTTP is port 80, and port 443 for HTTPS.</p>
+            
+            <p>HTTP is based on a client-server architecture. A server is the origin of resources and manages the requests. While a client is any user agent (web browsers, spider, other web applications) that makes request to retrieve resources. HTTP will not function if the client or server does not exist.</p>
+            
+            <p>HTTP is stateless protocol. This means that the server does not store information in between requests. The server only focuses on providing responses to the client.</p>
+            
+            <p>The protocols different capabilities made it possible to support the following features:</p>
+            <ul>
+                <li>Content Negotiation - Selection of the most suitable available resource from the server to the client. </li>
+                <li>Multiplexing - It allows to send multiple HTTP requests and receives responses one at a time.</li>
+                <li>Authentication/Authorization - Manages security by setting access privileges and other methods.</li>
+                <li>Content/Transfer codings - HTTP provides the option to control transformation using compression.</li>
+                <li>Cache Control - Stores temporary data so that the browser does not need to wait for the server to deliver the response.</li>
+                <li>Language and character set - Different options of Language and character sets are supported in HTTP</li>
+                <li>Content Media Type - HTTP supports different media type such as JPEG, PNG, GIF, and etc.</li>
+            </ul>
+            
+            
         </div>
 
         <div id="http-resource-addressing"><a name="http-res"></a>
@@ -254,6 +275,7 @@
                 <li><a href="https://www.technologyreview.com/s/415460/a-web-spider-for-everyone/">https://www.technologyreview.com/s/415460/a-web-spider-for-everyone/</a></li>
                 <li><a href="https://hpbn.co/brief-history-of-http/">https://hpbn.co/brief-history-of-http/</a></li>
                 <li><a href="https://www.w3.org/Protocols/HTTP/1.0/spec.html">https://www.w3.org/Protocols/HTTP/1.0/spec.html</a></li>
+                <li><a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec12.html">https://www.w3.org/Protocols/rfc2616/rfc2616-sec12.html</a></li>
                 <li><a href="https://tools.ietf.org/html/rfc2616">https://tools.ietf.org/html/rfc2616</a></li>
                 <li><a href="http://www.informit.com/articles/article.aspx?p=597695&seqNum=2">http://www.informit.com/articles/article.aspx?p=597695&seqNum=2</a></li>
                 <li><a href="https://tools.ietf.org/html/rfc2616#section-9.4">https://tools.ietf.org/html/rfc2616#section-9.4</a></li>
