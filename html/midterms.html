@@ -26,9 +26,9 @@
                 </div>
             </li>
             <li><a href="review.html">Review</a>
-            <li><a href="about.html">About</a>
-            <li><a href="glossary.html">Glossary</a>
-        </ul>   
+                <li><a href="about.html">About</a>
+                    <li><a href="glossary.html">Glossary</a>
+        </ul>
     </nav>
 
     <h2>Midterms Topics</h2>
@@ -40,7 +40,10 @@
             <ul>
                 <li>CSS</li>
                 <ul>
-                    <li>Fundamentals</li>
+                    <li><a href="#css-fundamentals">Fundamentals</a></li>
+                    <ul>
+                        <li><a href="#html-stylesheet">HTML Stylesheets</a></li>
+                    </ul>
                     <li>Preprocessors, Frameworks, and Libraries</li>
                 </ul>
                 <li>Client-Side Web Scripting</li>
@@ -52,9 +55,72 @@
                 </ul>
             </ul>
         </div>
+
+        <div id="css">
+            <h3>CSS</h3>
+            <p>Cascading Style Sheets or CSS provides style and layout to documents that use markup language such as HTML. It sets the color, fonts, sizes, spacing, and other properties of elements used in a document.</p>
+
+            <p>It was only in the year 1994 when the CSS was developed. Håkon Wium Lie noticed the lack of style and layout in web pages, and he decided to launch the first draft proposal of Cascading HTML Style Sheets in October 1994. After Håkon's proposal made news, Bert Bos supported his idea. He tried to develop Argo, a browser that can be customized and integrates stylesheets. Bert proposed for <a href="https://www.w3.org/People/Bos/stylesheets.html">Stream-based style sheet</a> There were many other stylesheet languages available, but the ideas from Håkon and Bert were the ones that were mostly included into CSS. That is because CSS is cascaded which allows the combination of styles for both users and authors of web pages.</p>
+
+            <h4>CSS Version History</h4>
+            <h5>CSS1</h5>
+            <p>CSS Level 1 was launched in December 1996 as W3C Recommendation. Text fonts, color, spacing, and properties of other elements are already available in this version. CSS1 This is the first version of CSS was not widely used during it's time because web browsers did not support the style language.</p>
+
+            <h5>CSS2</h5>
+            <p>CSS Level 2 was launched in May 1998 as W3C Recommendation. This version provided positioning properties that helps for the layout of the webpage. Styles for various media types were also included in this version.</p>
+
+            <h5>CSS2.1</h5>
+            <p>CSS Level 2 Revision 1 or CSS 2.1 is revision based on CSS 2. It contains the same features as CSS 2, but there were some features removed, corrected and added. One of feature that was added is the height and width sizes definition for elements with absolute position.</p>
+
+            <h5>CSS3</h5>
+            <p>CSS Level 3 is the latest updated version of CSS. This version extends the styling capabilities of the previous version. CSS components from CSS 2.1 and other extension components were divided into modules. Each module has a separate discussion that focuses on the standardization of the CSS component.</p>
+
+            <div id="css-fundamentals">
+                <h4>CSS Fundamentals</h4>
+                <div id="html-stylesheet">
+                    <h5>HTML Stylesheets</h5>
+                    <p>HTML stylesheets provides design and layout to HTML documents. An example of an HTML stylesheet is CSS. Stylesheets can be applied by web page authors and/or users. There are different ways to do this.</p>
+
+                    <ul>
+                        Author Style
+                        <li>External</li>
+                        <p>An external stylesheet is used by specifying a link in the HTML document. That is the reason why external stylesheets are also called linked stylesheets. An example is provided below. This is the most recommend way of using a s stylesheet because one stylesheet can be used multiple times in different web pages. Having a consistent style across web pages is easier when using external stylesheets. Whenever there are some modifications needed, only a single file needs to be edited.</p>
+                        <textarea name="external-css" rows="12" cols="80">
+    &lt;!DOCTYPE&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Web Systems and Technologies&lt;/title&gt;
+        &lt;link rel="stylesheet" type="text/css" href="styles/style.css"&gt;
+    &lt;/head&gt;
         
-        <p>Discussion about these topics will be posted soon!</p>
+    &lt;body&gt;
+        Hello World Wide Web
+    &lt;/body&gt;
+    &lt;/html&gt;
+                        </textarea>
+                        <li>Embedded</li>
+                        <p>Embedded stylesheets or internal stylesheet </p>
+                        <li>Internal Style</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="references">
+            <h3>References</h3>
+            <ul>
+                <li><a href="https://www.w3.org/Style/CSS20/history.html">CSS History</a></li>
+                <li><a href="http://www.corelangs.com/css/basics/versions.html">CSS Version History</a></li>
+                <li><a href="https://www.w3.org/TR/2011/REC-CSS2-20110607/">CSS2.1</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3">CSS3</a></li>
+            </ul>
+        </div>
+
     </div>
+
+
+
 </body>
 
 </html>
