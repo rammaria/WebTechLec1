@@ -104,12 +104,12 @@
             <p>HTTP/1.0 is documented in <a href="https://www.ietf.org/rfc/rfc1945.txt">RFC 1945</a> on May 1996</p>
 
             <h5>HTTP/1.1<a name="http11"></a></h5>
-            <p>HTTP/1.1 communicates using persistent connection. Persistent connection allows the connection between the client and server to continue until there is a close signal for the TCP connection. This eliminates the hassle of making multiple request from same server. This version has five additional methods. These methods are DELETE, PUT, TRACE, CONNECT.</p>
+            <p>HTTP/1.1 communicates using persistent connection. <a name="persistent-con">Persistent connection</a> allows the connection between the client and server to continue until there is a close signal for the TCP connection. This eliminates the hassle of making multiple request from same server. This version has five additional methods. These methods are DELETE, PUT, TRACE, CONNECT.</p>
 
             <p>HTTP/1.1 is documented in <a href="https://tools.ietf.org/html/rfc2068.html">RFC 2068</a> published on January 1997<a href="https://tools.ietf.org/html/rfc2616">RFC 2616</a> published on June 1999 and <a href="https://tools.ietf.org/html/rfc7230">RFC 7230</a>, <a href="https://tools.ietf.org/html/rfc7231">RFC 7231</a>, <a href="https://tools.ietf.org/html/rfc7232">RFC 7232</a>, <a href="https://tools.ietf.org/html/rfc7233">RFC 7233</a>, <a href="https://tools.ietf.org/html/rfc7232">RFC 7234</a>, <a href="https://tools.ietf.org/html/rfc7233">RFC 7235</a> published on June 2014. RFC 2616 became obsolete since RFC 7230-7235 were published. They have the similar content, but the newer documentation is separated by topics.</p>
 
             <h5>HTTP/2<a name="http2"></a></h5>
-            <p>HTTP/2 is only an alternative version, and it does not replace its predecessor, HTTP/1.1. It is an improved version of HTTP/1.1 because it is capable of retrieving web sources at a faster speed. In this version, latency is reduced because because compression of headers is already possible. Multiplexing is another main feature added to HTTP/2. Multiplexing allows to send multiple HTTP requests and receives responses one at a time. </p>
+            <p>HTTP/2 is only an alternative version, and it does not replace its predecessor, HTTP/1.1. It is an improved version of HTTP/1.1 because it is capable of retrieving web sources at a faster speed. In this version, latency is reduced because because compression of headers is already possible. Multiplexing is another main feature added to HTTP/2. <a name="multiplexing">Multiplexing</a> allows to send multiple HTTP requests and receives responses one at a time. </p>
 
             <p>HTTP/2 is documented in <a href="https://tools.ietf.org/html/rfc7540.html">RFC 7540</a> published on May 2015</p>
         </div>
@@ -119,17 +119,15 @@
             
             <p>Acknowledging the fundamentals of HTTP will contribute to a better understanding of the protocol. In this section, the basics of HTTP will be discussed.</p>
             
-            <p>HTTP runs on Transmission Control Protocol/Internet Protocol or commonly known as TCP/IP. The default TCP port for HTTP is port 80, and port 443 for HTTPS.</p>
+            <p>HTTP runs on Transmission Control Protocol/Internet Protocol or commonly known as <a name="tcp/ip">TCP/IP</a>. The default TCP port for HTTP is port 80, and port 443 for HTTPS.</p>
         
-            <p>HTTP is based on a client-server architecture. A server is the origin of resources and manages the requests. While a client is any user agent (web browsers, spider, other web applications) that makes request to retrieve resources. HTTP will not function if the client or server does not exist.</p>
-            
-            <p>HTTP is based on a client-server architecture. A server is the origin of resources and manages the requests. While a client is any user agent (web browsers, spider, other web applications) that makes request to retrieve resources. HTTP will not function if the client or server does not exist.</p>
+            <p>HTTP is based on a <a name="client-server">client-server architecture</a>. A server is the origin of resources and manages the requests. While a client is any user agent (web browsers, spider, other web applications) that makes request to retrieve resources. HTTP will not function if the client or server does not exist.</p>
             
             <p>HTTP is stateless protocol. This means that the server does not store information in between requests. The server only focuses on providing responses to the client.</p>
             
             <p>The protocols different capabilities made it possible to support the following features:</p>
             <ul>
-                <li>Content Negotiation - Selection of the most suitable available resource from the server to the client. </li>
+                <li><a name="content-nego">Content Negotiation</a> - Selection of the most suitable available resource from the server to the client. </li>
                 <li>Multiplexing - It allows to send multiple HTTP requests and receives responses one at a time.</li>
                 <li>Authentication/Authorization - Manages security by setting access privileges and other methods.</li>
                 <li>Content/Transfer codings - HTTP provides the option to control transformation using compression.</li>
@@ -143,20 +141,20 @@
 
         <div id="http-resource-addressing"><a name="http-res"></a>
             <h4>HTTP Resource Addressing</h4>
-            <h5>URI<a name="uri"></a></h5>
+            <h5><a name="uri">URI</a></h5>
             <p>Uniform Resource Identifier or URI is a string of characters that determines a resource. URL and URN are both subsets only of a URI. A URL is a URI that is classified as a locator. A URN is a URI that is classfied as a name. A URI can be either URL, URN, or both.</p>
             
             <p>URI has the following syntax:
             <br> Scheme://Authority@Host:Port/Path?Query#Fragment </p>
             
-            <p>Scheme - Scheme indicates the associated protocol. It is always followed by a colon. Some schemes requires to have double slash after the colon. The most common example of schemes are HTTP and HTTPS.</p>
+            <p><a name="scheme">Scheme</a> - Scheme indicates the associated protocol. It is always followed by a colon. Some schemes requires to have double slash after the colon. The most common example of schemes are HTTP and HTTPS.</p>
             
-            <p>Authority - This component is composed three parts: optional authentication part, host, and port. The authentication part is for the user information. Then followed by an at sign (@). After the at sign, the host is indicates the domain name or the IP address where the resource is located. Lastly, the authority component may include the port number.</p>
+            <p><a name="authority">Authority</a> - This component is composed three parts: optional authentication part, host, and port. The authentication part is for the user information. Then followed by an at sign (@). After the at sign, the host is indicates the domain name or the IP address where the resource is located. Lastly, the authority component may include the port number.</p>
             
             
-            <p>Path - The directory path of the actual document.</p>
+            <p><a name="path">Path</a> - The directory path of the actual document.</p>
             
-            <p>Query - This is an optional component of a URI that normally contains attribute values. It begins with a question mark (?) and uses an ampersand (&) as a delimiter.</p>
+            <p><a name="query">Query</a> - This is an optional component of a URI that normally contains attribute values. It begins with a question mark (?) and uses an ampersand (&) as a delimiter.</p>
             
             <p>Fragment Identifier - This is an optional component of a URI that provides the location of another resource. Fragment identifiers begins with a hash (#)</p>
             
