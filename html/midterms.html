@@ -25,14 +25,13 @@
                     </div>
                 </div>
             </li>
-            <li><a href="review.html">Review</a>
-                <li><a href="about.html">About</a>
-                    <li><a href="glossary.html">Glossary</a>
+            <li><a href="review.html">Review</a></li>
+            <li><a href="glossary.html">Glossary</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
     </nav>
 
-    <h2>Midterms Topics</h2>
-
+    <h2>Midterms</h2>
     <div class="page-content">
         <div class="term-topics">
             <h3>Midterms Topics</h3>
@@ -40,9 +39,12 @@
             <ul>
                 <li>CSS</li>
                 <ul>
+                    <li><a href="#css-tools">Tools</a></li>
                     <li><a href="#css-fundamentals">Fundamentals</a></li>
                     <ul>
                         <li><a href="#html-stylesheet">HTML Stylesheets</a></li>
+                        <li><a href="#css-statements">CSS Statements</a></li>
+                        <li><a href="#css-selectors">CSS Selectors</a></li>
                     </ul>
                     <li>Preprocessors, Frameworks, and Libraries</li>
                 </ul>
@@ -75,14 +77,28 @@
             <h5>CSS3</h5>
             <p>CSS Level 3 is the latest updated version of CSS. This version extends the styling capabilities of the previous version. CSS components from CSS 2.1 and other extension components were divided into modules. Each module has a separate discussion that focuses on the standardization of the CSS component.</p>
 
+            <div id="css-tools">
+                <h4>CSS Tools</h4>
+                <p> There are plenty of references and tools available online that are helpful in understanding and learning CSS. Some recommendations are listed below:</p>
+
+                <ul>
+                    <li><a href="https://webmakerapp.com/">WebMaker</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network</a></li>
+                    <li><a href="https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en">Stylish</a></li>
+                    <li><a href="https://caniuse.com/">Can I Use?</a></li>
+                    <li><a href="https://fonts.google.com/">Google Fonts</a></li>
+                    <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
+                </ul>
+            </div>
+
             <div id="css-fundamentals">
                 <h4>CSS Fundamentals</h4>
                 <div id="html-stylesheet">
                     <h5>HTML Stylesheets</h5>
                     <p>HTML stylesheets provides design and layout to HTML documents. An example of an HTML stylesheet is CSS. Stylesheets can be applied by web page authors and/or users. There are different ways to do this.</p>
 
-                    <ul>
-                        Author Style
+                    <h6>Author Style</h6>
+                    <ul name="author-style">
                         <li>External</li>
                         <p>An external stylesheet is used by specifying a link in the HTML document. That is the reason why external stylesheets are also called linked stylesheets. An example is provided below. This is the most recommend way of using a s stylesheet because one stylesheet can be used multiple times in different web pages. Having a consistent style across web pages is easier when using external stylesheets. Whenever there are some modifications needed, only a single file needs to be edited.</p>
                         <textarea name="external-css" rows="12" cols="80">
@@ -99,11 +115,100 @@
     &lt;/html&gt;
                         </textarea>
                         <li>Embedded</li>
-                        <p>Embedded stylesheets or internal stylesheet </p>
+                        <p>Embedded stylesheets or internal stylesheets are used when the style element is added under the head section. An example is provided below: </p>
+                        <textarea name="internal-css" rows="14" cols="80">
+    &lt;!DOCTYPE&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Web Systems and Technologies&lt;/title&gt;
+        &lt;style&gt;
+            h1 {color: pink;}
+        &lt;/style&gt;
+    &lt;/head&gt;
+        
+    &lt;body&gt;
+        &lt;h1&gt;Hello World Wide Web&lt;/h1&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+                        </textarea>
                         <li>Internal Style</li>
+                        <p>Internal styling is not really recommended for HTML stylesheets. It is usually used to provide a style for a single element. The attribute <i>style</i> is provided with properties and values. See the example in the textbox below.</p>
+                        <textarea name="inline-css" rows="11" cols="80">
+    &lt;!DOCTYPE&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Web Systems and Technologies&lt;/title&gt;
+    &lt;/head&gt;
+        
+    &lt;body&gt;
+        &lt;h1 style="color:pink;"&gt;Hello World Wide Web&lt;/h1&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+                        </textarea>
+
+                    </ul>
+
+                    <h6>User Style</h6>
+                    <ul name="user-style">
+                        <li>Non-standard style</li>
+                        <p>There are non-standard styles that the user may apply on web pages. Some of these styles are referred to as themes. These themes may be applied on web browsers using extensions or plugins such as <a href="https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en">Stylish</a>. There are browsers that are not capable of this feature because they prefer the standard styles provided by the authors as some may contain important useful layout or design.</p>
                     </ul>
                 </div>
+
+                <div id="css-statements">
+                    <h5>CSS Statements</h5>
+                    <h6 name="at-rules">At-Rules</h6>
+                    <p>These CSS statements specifies action or behavior for CSS. An at-rule of CSS starts with an at sign (@), then followed by a keyword or identifier, then followed by descriptors, a filename, or other values. It ends with a semicolon (;). It can also have a declaration block that is denoted by using open and close curly braces. </p>
+
+                    <p>There are different kinds of at-rules and each may have a varying syntax. Some examples are listed below: </p>
+
+                    <ul>
+                        <li>Regular At-Rules</li>
+                        <p>These at-rules follow this syntax:</p>
+                        <textarea name="regular-at" rows="2" cols="20">
+@[keyword] (rule);
+                        </textarea>
+                        <ul>
+                            <li>@charset</li>
+                            <li>@import</li>
+                            <li>@namespace</li>
+                        </ul>
+                        <li>Nested At-Rules</li>
+                        <p>These at-rules is nested, and most of them include additional statements that have descriptors to allow customization. The syntax is as follows:</p>
+                        <textarea name="regular-at" rows="4" cols="20">
+@[keyword] {
+    /*statements*/
+}
+                        </textarea>
+                        <ul>
+                            <li>@font-face</li>
+                            <li>@document</li>
+                            <li>@keyframes</li>
+                            <li>@media</li>
+                            <li>@page</li>
+                        </ul>
+
+
+                    </ul>
+                    <h6>CSS Rule Sets</h6>
+                    <p>Rule sets are CSS statements that specifies how browsers should render elements on web page. A rule set starts with a selector, then followed by a declaration block. A selector is used to identify the element from the HTML document that needs to be customized. A declaration block has a property name, and uses a colon (:) to separate the property value. A declaration block ends with a semicolon (;).</p>
+                    
+                    <p>Some example of rule sets are provided below:</p>
+                    <textarea name="rulesets" rows="5" cols="30">
+    p { color: black; }
+    h1{ color: black;
+        font-size: 10pt;
+    }
+                    </textarea>
+                </div>
+
+                <div id="css-selectors">
+                    <h5>CSS Selectors</h5>
+                </div>
+
             </div>
+            
+            To know more about the rules of CSS, read <a href="https://www.w3.org/TR/REC-CSS2/syndata.html#q8">CSS 2 Syntax and Basic Data Types</a> 
         </div>
 
 
@@ -114,6 +219,8 @@
                 <li><a href="http://www.corelangs.com/css/basics/versions.html">CSS Version History</a></li>
                 <li><a href="https://www.w3.org/TR/2011/REC-CSS2-20110607/">CSS2.1</a></li>
                 <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3">CSS3</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule">At-rules</a></li>
+                <li><a href="https://css-tricks.com/the-at-rules-of-css/">At-rules</a></li>
             </ul>
         </div>
 
