@@ -24,3 +24,27 @@ body {
 #ans:hover { 
     color: black;
 }
+
+/*pc screen*/
+
+.page-content{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+.page-content #topic-content{
+    grid-column: 2;
+    padding: 1vh;
+}
+
+#term-topics{
+    grid-column: 1;
+    background-color: #2ed4d4;
+    height: 100%;
+}
+
+.fixed-nav{
+    position: fixed;
+    top: 0;
+    width: 20%;
+}
