@@ -40,7 +40,7 @@
             <h3>Midterms Topics</h3>
             <div id="topics-nav">
                 <ul>
-                    <li>CSS</li>
+                    <li><a href="#css">CSS</a></li>
                     <ul>
                         <li><a href="#css-tools">Tools</a></li>
                         <li><a href="#css-fundamentals">Fundamentals</a></li>
@@ -107,7 +107,7 @@
                         <ul name="author-style">
                             <li>External</li>
                             <p>An external stylesheet is used by specifying a link in the HTML document. That is the reason why external stylesheets are also called linked stylesheets. An example is provided below. This is the most recommend way of using a s stylesheet because one stylesheet can be used multiple times in different web pages. Having a consistent style across web pages is easier when using external stylesheets. Whenever there are some modifications needed, only a single file needs to be edited.</p>
-                            <textarea name="external-css" rows="12" cols="80">
+                            <textarea name="external-css" rows="12" cols="75">
     &lt;!DOCTYPE&gt;
     &lt;html&gt;
     &lt;head&gt;
@@ -122,7 +122,7 @@
                         </textarea>
                             <li>Embedded</li>
                             <p>Embedded stylesheets or internal stylesheets are used when the style element is added under the head section. An example is provided below: </p>
-                            <textarea name="internal-css" rows="14" cols="80">
+                            <textarea name="internal-css" rows="14" cols="75">
     &lt;!DOCTYPE&gt;
     &lt;html&gt;
     &lt;head&gt;
@@ -139,7 +139,7 @@
                         </textarea>
                             <li>Internal Style</li>
                             <p>Internal styling is not really recommended for HTML stylesheets. It is usually used to provide a style for a single element. The attribute <i>style</i> is provided with properties and values. See the example in the textbox below.</p>
-                            <textarea name="inline-css" rows="11" cols="80">
+                            <textarea name="inline-css" rows="11" cols="75">
     &lt;!DOCTYPE&gt;
     &lt;html&gt;
     &lt;head&gt;
@@ -171,7 +171,7 @@
                         <ul>
                             <li>Regular At-Rules</li>
                             <p>These at-rules follow this syntax:</p>
-                            <textarea name="regular-at" rows="2" cols="20">
+                            <textarea name="regular-at" rows="3" cols="25">
 @[keyword] (rule);
                         </textarea>
                             <ul>
@@ -181,7 +181,7 @@
                             </ul>
                             <li>Nested At-Rules</li>
                             <p>These at-rules is nested, and most of them include additional statements that have descriptors to allow customization. The syntax is as follows:</p>
-                            <textarea name="regular-at" rows="4" cols="20">
+                            <textarea name="regular-at" rows="4" cols="25">
 @[keyword] {
     /*statements*/
 }
@@ -218,7 +218,40 @@
             </div>
 
             <div id="scripting"> <a class="topiclink" name="scripting"></a>
-                <div id="javascript"></div>
+                <div id="javascript">
+                    <h4>JavaScript Fundamentals</h4> <a class="topiclink" name="javascript"></a>
+                    <p>Before knowing the fundamentals of JavaScript, we have to know what JavaScript is. JavaScript is a dynamic programming language that is applied to an HTML file, it then can provide different interactivities to the websites.</p>
+
+                    <h5>Variable & Constant Declaration</h5>
+                    <textarea name="var-declaration" rows="5" cols="75">
+   var single; // a declaration of a single variable
+   var one, two, three, four; // a declaration of multiple variables
+   var single = 1; // assigning a value to the declared variable
+                    </textarea>
+                    <p>Variables are used to store, load and manipulate the different values in your code. Like shown above, the word "var" plus the name is how you declare a variable.</p>
+                    <textarea name="var-declaration" rows="3" cols="35">
+    var myNumber = 123456789;
+                    </textarea>
+                    <p>Naming conventions are supposed to be always followed. If in case the name of your variable contains two or more words, only capitalize the first letter of the second (or third or fourth or fifth, if there are) word like shown above.</p>
+                    <textarea name="var-declaration" rows="4" cols="35">
+    var zero = null;
+    var undef;
+                    </textarea>
+                    <p>Variables with the "null" value means there is nothing store in the variable or the variable is zero. While variables without any assignment operation are undefined.</p>
+                    <textarea name="var-declaration" rows="5" cols="35">
+    var animal = "cat";
+    animal = "dog";
+    animal = 5;
+                    </textarea>
+                    <h5>Data Types</h5>
+                    <h5>Operators</h5>
+                    <h5>Operator Precedence</h5>
+                    <!-- patrick start here -->
+                    <h5>Program Flow</h5>
+                    <h5>Functions</h5>
+                    <h5>Objects</h5>
+                    <h5>Arrays</h5>
+                </div>
                 <div id="dom"></div>
                 <div id="js-libraries"></div>
                 <div id="csws"></div>
@@ -237,9 +270,6 @@
             </div>
         </div>
     </div>
-
-
-
 </body>
 
 </html>
