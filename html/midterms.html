@@ -6,12 +6,15 @@
     <link rel="stylesheet" type="text/css" href="../styles/style.css">
     <link rel="stylesheet" type="text/css" href="../styles/nav.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="../scripts/jquery-3.2.1.min.js"></script>
+    <script src="../scripts/stickynav.js"></script>
+    <script src="../scripts/perfect-scrollbar.js"></script>
+    <script src="../scripts/scroll.js"></script>
 </head>
 
 
 <body>
     <h1>Web Systems and Technologies</h1>
-
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -33,75 +36,78 @@
 
     <h2>Midterms</h2>
     <div class="page-content">
-        <div class="term-topics">
+        <div id="term-topics">
             <h3>Midterms Topics</h3>
-
-            <ul>
-                <li>CSS</li>
+            <div id="topics-nav">
                 <ul>
-                    <li><a href="#css-tools">Tools</a></li>
-                    <li><a href="#css-fundamentals">Fundamentals</a></li>
+                    <li>CSS</li>
                     <ul>
-                        <li><a href="#html-stylesheet">HTML Stylesheets</a></li>
-                        <li><a href="#css-statements">CSS Statements</a></li>
-                        <li><a href="#css-selectors">CSS Selectors</a></li>
+                        <li><a href="#css-tools">Tools</a></li>
+                        <li><a href="#css-fundamentals">Fundamentals</a></li>
+                        <ul>
+                            <li><a href="#html-stylesheet">HTML Stylesheets</a></li>
+                            <li><a href="#css-statements">CSS Statements</a></li>
+                            <li><a href="#css-selectors">CSS Selectors</a></li>
+                        </ul>
+                        <li>Preprocessors, Frameworks, and Libraries</li>
                     </ul>
-                    <li>Preprocessors, Frameworks, and Libraries</li>
-                </ul>
-                <li>Client-Side Web Scripting</li>
-                <ul>
-                    <li>JavaScript Fundamentals</li>
-                    <li>Document Object Model</li>
-                    <li>JS Preprocessors, Frameworks and Libraries</li>
-                    <li>Other CSWS Technology</li>
-                </ul>
-            </ul>
-        </div>
-
-        <div id="css">
-            <h3>CSS</h3>
-            <p>Cascading Style Sheets or CSS provides style and layout to documents that use markup language such as HTML. It sets the color, fonts, sizes, spacing, and other properties of elements used in a document.</p>
-
-            <p>It was only in the year 1994 when the CSS was developed. Håkon Wium Lie noticed the lack of style and layout in web pages, and he decided to launch the first draft proposal of Cascading HTML Style Sheets in October 1994. After Håkon's proposal made news, Bert Bos supported his idea. He tried to develop Argo, a browser that can be customized and integrates stylesheets. Bert proposed for <a href="https://www.w3.org/People/Bos/stylesheets.html">Stream-based style sheet</a> There were many other stylesheet languages available, but the ideas from Håkon and Bert were the ones that were mostly included into CSS. That is because CSS is cascaded which allows the combination of styles for both users and authors of web pages.</p>
-
-            <h4>CSS Version History</h4>
-            <h5>CSS1</h5>
-            <p>CSS Level 1 was launched in December 1996 as W3C Recommendation. Text fonts, color, spacing, and properties of other elements are already available in this version. CSS1 This is the first version of CSS was not widely used during it's time because web browsers did not support the style language.</p>
-
-            <h5>CSS2</h5>
-            <p>CSS Level 2 was launched in May 1998 as W3C Recommendation. This version provided positioning properties that helps for the layout of the webpage. Styles for various media types were also included in this version.</p>
-
-            <h5>CSS2.1</h5>
-            <p>CSS Level 2 Revision 1 or CSS 2.1 is revision based on CSS 2. It contains the same features as CSS 2, but there were some features removed, corrected and added. One of feature that was added is the height and width sizes definition for elements with absolute position.</p>
-
-            <h5>CSS3</h5>
-            <p>CSS Level 3 is the latest updated version of CSS. This version extends the styling capabilities of the previous version. CSS components from CSS 2.1 and other extension components were divided into modules. Each module has a separate discussion that focuses on the standardization of the CSS component.</p>
-
-            <div id="css-tools">
-                <h4>CSS Tools</h4>
-                <p> There are plenty of references and tools available online that are helpful in understanding and learning CSS. Some recommendations are listed below:</p>
-
-                <ul>
-                    <li><a href="https://webmakerapp.com/">WebMaker</a></li>
-                    <li><a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network</a></li>
-                    <li><a href="https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en">Stylish</a></li>
-                    <li><a href="https://caniuse.com/">Can I Use?</a></li>
-                    <li><a href="https://fonts.google.com/">Google Fonts</a></li>
-                    <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
+                    <li>Client-Side Web Scripting</li>
+                    <ul>
+                        <li>JavaScript Fundamentals</li>
+                        <li>Document Object Model</li>
+                        <li>JS Preprocessors, Frameworks and Libraries</li>
+                        <li>Other CSWS Technology</li>
+                    </ul>
                 </ul>
             </div>
+        </div>
 
-            <div id="css-fundamentals">
-                <h4>CSS Fundamentals</h4>
-                <div id="html-stylesheet">
-                    <h5>HTML Stylesheets</h5>
-                    <p>HTML stylesheets provides design and layout to HTML documents. An example of an HTML stylesheet is CSS. Stylesheets can be applied by web page authors and/or users. There are different ways to do this.</p>
+        <div id="topic-content">
 
-                    <h6>Author Style</h6>
-                    <ul name="author-style">
-                        <li>External</li>
-                        <p>An external stylesheet is used by specifying a link in the HTML document. That is the reason why external stylesheets are also called linked stylesheets. An example is provided below. This is the most recommend way of using a s stylesheet because one stylesheet can be used multiple times in different web pages. Having a consistent style across web pages is easier when using external stylesheets. Whenever there are some modifications needed, only a single file needs to be edited.</p>
-                        <textarea name="external-css" rows="12" cols="80">
+            <div id="css">
+                <h3>CSS</h3>
+                <p>Cascading Style Sheets or CSS provides style and layout to documents that use markup language such as HTML. It sets the color, fonts, sizes, spacing, and other properties of elements used in a document.</p>
+
+                <p>It was only in the year 1994 when the CSS was developed. Håkon Wium Lie noticed the lack of style and layout in web pages, and he decided to launch the first draft proposal of Cascading HTML Style Sheets in October 1994. After Håkon's proposal made news, Bert Bos supported his idea. He tried to develop Argo, a browser that can be customized and integrates stylesheets. Bert proposed for <a href="https://www.w3.org/People/Bos/stylesheets.html">Stream-based style sheet</a> There were many other stylesheet languages available, but the ideas from Håkon and Bert were the ones that were mostly included into CSS. That is because CSS is cascaded which allows the combination of styles for both users and authors of web pages.</p>
+
+                <h4>CSS Version History</h4>
+                <h5>CSS1</h5>
+                <p>CSS Level 1 was launched in December 1996 as W3C Recommendation. Text fonts, color, spacing, and properties of other elements are already available in this version. CSS1 This is the first version of CSS was not widely used during it's time because web browsers did not support the style language.</p>
+
+                <h5>CSS2</h5>
+                <p>CSS Level 2 was launched in May 1998 as W3C Recommendation. This version provided positioning properties that helps for the layout of the webpage. Styles for various media types were also included in this version.</p>
+
+                <h5>CSS2.1</h5>
+                <p>CSS Level 2 Revision 1 or CSS 2.1 is revision based on CSS 2. It contains the same features as CSS 2, but there were some features removed, corrected and added. One of feature that was added is the height and width sizes definition for elements with absolute position.</p>
+
+                <h5>CSS3</h5>
+                <p>CSS Level 3 is the latest updated version of CSS. This version extends the styling capabilities of the previous version. CSS components from CSS 2.1 and other extension components were divided into modules. Each module has a separate discussion that focuses on the standardization of the CSS component.</p>
+
+                <div id="css-tools">
+                    <h4>CSS Tools</h4>
+                    <p> There are plenty of references and tools available online that are helpful in understanding and learning CSS. Some recommendations are listed below:</p>
+
+                    <ul>
+                        <li><a href="https://webmakerapp.com/">WebMaker</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network</a></li>
+                        <li><a href="https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en">Stylish</a></li>
+                        <li><a href="https://caniuse.com/">Can I Use?</a></li>
+                        <li><a href="https://fonts.google.com/">Google Fonts</a></li>
+                        <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
+                    </ul>
+                </div>
+
+                <div id="css-fundamentals">
+                    <h4>CSS Fundamentals</h4>
+                    <div id="html-stylesheet">
+                        <h5>HTML Stylesheets</h5>
+                        <p>HTML stylesheets provides design and layout to HTML documents. An example of an HTML stylesheet is CSS. Stylesheets can be applied by web page authors and/or users. There are different ways to do this.</p>
+
+                        <h6>Author Style</h6>
+                        <ul name="author-style">
+                            <li>External</li>
+                            <p>An external stylesheet is used by specifying a link in the HTML document. That is the reason why external stylesheets are also called linked stylesheets. An example is provided below. This is the most recommend way of using a s stylesheet because one stylesheet can be used multiple times in different web pages. Having a consistent style across web pages is easier when using external stylesheets. Whenever there are some modifications needed, only a single file needs to be edited.</p>
+                            <textarea name="external-css" rows="12" cols="80">
     &lt;!DOCTYPE&gt;
     &lt;html&gt;
     &lt;head&gt;
@@ -114,9 +120,9 @@
     &lt;/body&gt;
     &lt;/html&gt;
                         </textarea>
-                        <li>Embedded</li>
-                        <p>Embedded stylesheets or internal stylesheets are used when the style element is added under the head section. An example is provided below: </p>
-                        <textarea name="internal-css" rows="14" cols="80">
+                            <li>Embedded</li>
+                            <p>Embedded stylesheets or internal stylesheets are used when the style element is added under the head section. An example is provided below: </p>
+                            <textarea name="internal-css" rows="14" cols="80">
     &lt;!DOCTYPE&gt;
     &lt;html&gt;
     &lt;head&gt;
@@ -131,9 +137,9 @@
     &lt;/body&gt;
     &lt;/html&gt;
                         </textarea>
-                        <li>Internal Style</li>
-                        <p>Internal styling is not really recommended for HTML stylesheets. It is usually used to provide a style for a single element. The attribute <i>style</i> is provided with properties and values. See the example in the textbox below.</p>
-                        <textarea name="inline-css" rows="11" cols="80">
+                            <li>Internal Style</li>
+                            <p>Internal styling is not really recommended for HTML stylesheets. It is usually used to provide a style for a single element. The attribute <i>style</i> is provided with properties and values. See the example in the textbox below.</p>
+                            <textarea name="inline-css" rows="11" cols="80">
     &lt;!DOCTYPE&gt;
     &lt;html&gt;
     &lt;head&gt;
@@ -146,84 +152,84 @@
     &lt;/html&gt;
                         </textarea>
 
-                    </ul>
+                        </ul>
 
-                    <h6>User Style</h6>
-                    <ul name="user-style">
-                        <li>Non-standard style</li>
-                        <p>There are non-standard styles that the user may apply on web pages. Some of these styles are referred to as themes. These themes may be applied on web browsers using extensions or plugins such as <a href="https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en">Stylish</a>. There are browsers that are not capable of this feature because they prefer the standard styles provided by the authors as some may contain important useful layout or design.</p>
-                    </ul>
-                </div>
+                        <h6>User Style</h6>
+                        <ul name="user-style">
+                            <li>Non-standard style</li>
+                            <p>There are non-standard styles that the user may apply on web pages. Some of these styles are referred to as themes. These themes may be applied on web browsers using extensions or plugins such as <a href="https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en">Stylish</a>. There are browsers that are not capable of this feature because they prefer the standard styles provided by the authors as some may contain important useful layout or design.</p>
+                        </ul>
+                    </div>
 
-                <div id="css-statements">
-                    <h5>CSS Statements</h5>
-                    <h6 name="at-rules">At-Rules</h6>
-                    <p>These CSS statements specifies action or behavior for CSS. An at-rule of CSS starts with an at sign (@), then followed by a keyword or identifier, then followed by descriptors, a filename, or other values. It ends with a semicolon (;). It can also have a declaration block that is denoted by using open and close curly braces. </p>
+                    <div id="css-statements">
+                        <h5>CSS Statements</h5>
+                        <h6 name="at-rules">At-Rules</h6>
+                        <p>These CSS statements specifies action or behavior for CSS. An at-rule of CSS starts with an at sign (@), then followed by a keyword or identifier, then followed by descriptors, a filename, or other values. It ends with a semicolon (;). It can also have a declaration block that is denoted by using open and close curly braces. </p>
 
-                    <p>There are different kinds of at-rules and each may have a varying syntax. Some examples are listed below: </p>
+                        <p>There are different kinds of at-rules and each may have a varying syntax. Some examples are listed below: </p>
 
-                    <ul>
-                        <li>Regular At-Rules</li>
-                        <p>These at-rules follow this syntax:</p>
-                        <textarea name="regular-at" rows="2" cols="20">
+                        <ul>
+                            <li>Regular At-Rules</li>
+                            <p>These at-rules follow this syntax:</p>
+                            <textarea name="regular-at" rows="2" cols="20">
 @[keyword] (rule);
                         </textarea>
-                        <ul>
-                            <li>@charset</li>
-                            <li>@import</li>
-                            <li>@namespace</li>
-                        </ul>
-                        <li>Nested At-Rules</li>
-                        <p>These at-rules is nested, and most of them include additional statements that have descriptors to allow customization. The syntax is as follows:</p>
-                        <textarea name="regular-at" rows="4" cols="20">
+                            <ul>
+                                <li>@charset</li>
+                                <li>@import</li>
+                                <li>@namespace</li>
+                            </ul>
+                            <li>Nested At-Rules</li>
+                            <p>These at-rules is nested, and most of them include additional statements that have descriptors to allow customization. The syntax is as follows:</p>
+                            <textarea name="regular-at" rows="4" cols="20">
 @[keyword] {
     /*statements*/
 }
                         </textarea>
-                        <ul>
-                            <li>@font-face</li>
-                            <li>@document</li>
-                            <li>@keyframes</li>
-                            <li>@media</li>
-                            <li>@page</li>
+                            <ul>
+                                <li>@font-face</li>
+                                <li>@document</li>
+                                <li>@keyframes</li>
+                                <li>@media</li>
+                                <li>@page</li>
+                            </ul>
+
+
                         </ul>
+                        <h6>CSS Rule Sets</h6>
+                        <p>Rule sets are CSS statements that specifies how browsers should render elements on web page. A rule set starts with a selector, then followed by a declaration block. A selector is used to identify the element from the HTML document that needs to be customized. A declaration block has a property name, and uses a colon (:) to separate the property value. A declaration block ends with a semicolon (;).</p>
 
-
-                    </ul>
-                    <h6>CSS Rule Sets</h6>
-                    <p>Rule sets are CSS statements that specifies how browsers should render elements on web page. A rule set starts with a selector, then followed by a declaration block. A selector is used to identify the element from the HTML document that needs to be customized. A declaration block has a property name, and uses a colon (:) to separate the property value. A declaration block ends with a semicolon (;).</p>
-                    
-                    <p>Some example of rule sets are provided below:</p>
-                    <textarea name="rulesets" rows="5" cols="30">
+                        <p>Some example of rule sets are provided below:</p>
+                        <textarea name="rulesets" rows="5" cols="30">
     p { color: black; }
     h1{ color: black;
         font-size: 10pt;
     }
                     </textarea>
+                    </div>
+
+                    <div id="css-selectors">
+                        <h5>CSS Selectors</h5>
+                    </div>
+
                 </div>
 
-                <div id="css-selectors">
-                    <h5>CSS Selectors</h5>
-                </div>
-
+                To know more about the rules of CSS, read <a href="https://www.w3.org/TR/REC-CSS2/syndata.html#q8">CSS 2 Syntax and Basic Data Types</a>
             </div>
-            
-            To know more about the rules of CSS, read <a href="https://www.w3.org/TR/REC-CSS2/syndata.html#q8">CSS 2 Syntax and Basic Data Types</a> 
+
+
+            <div class="references">
+                <h3>References</h3>
+                <ul>
+                    <li><a href="https://www.w3.org/Style/CSS20/history.html">CSS History</a></li>
+                    <li><a href="http://www.corelangs.com/css/basics/versions.html">CSS Version History</a></li>
+                    <li><a href="https://www.w3.org/TR/2011/REC-CSS2-20110607/">CSS2.1</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3">CSS3</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule">At-rules</a></li>
+                    <li><a href="https://css-tricks.com/the-at-rules-of-css/">At-rules</a></li>
+                </ul>
+            </div>
         </div>
-
-
-        <div class="references">
-            <h3>References</h3>
-            <ul>
-                <li><a href="https://www.w3.org/Style/CSS20/history.html">CSS History</a></li>
-                <li><a href="http://www.corelangs.com/css/basics/versions.html">CSS Version History</a></li>
-                <li><a href="https://www.w3.org/TR/2011/REC-CSS2-20110607/">CSS2.1</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3">CSS3</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule">At-rules</a></li>
-                <li><a href="https://css-tricks.com/the-at-rules-of-css/">At-rules</a></li>
-            </ul>
-        </div>
-
     </div>
 
 
