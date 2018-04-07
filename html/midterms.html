@@ -218,6 +218,7 @@
             </div>
 
             <div id="scripting"> <a class="topiclink" name="scripting"></a>
+                <h3 name="web-scripting">Client-Side Web Scripting</h3>
                 <div id="javascript">
                     <h4>JavaScript Fundamentals</h4> <a class="topiclink" name="javascript"></a>
                     <p>Before knowing the fundamentals of JavaScript, we have to know what JavaScript is. JavaScript is a dynamic programming language that is applied to an HTML file, it then can provide different interactivities to the websites.</p>
@@ -232,18 +233,27 @@
                     <textarea name="var-declaration" rows="3" cols="35">
     var myNumber = 123456789;
                     </textarea>
-                    <p>Naming conventions are supposed to be always followed. If in case the name of your variable contains two or more words, only capitalize the first letter of the second (or third or fourth or fifth, if there are) word like shown above.</p>
-                    <textarea name="var-declaration" rows="4" cols="35">
-    var zero = null;
-    var undef;
+                    <p>Naming conventions are supposed to be always followed. If in case the name of your variable contains two or more words, only capitalize the first letter of the second (or third or fourth or fifth, if there are) word like shown above. Also, variable names should not start with symbols and numbers.</p>
+                    
+                    <h5>Data Types</h5>
+                    <textarea name="data-types-ex" rows="7" cols="50">
+    var string = "I am a string"; //primitive
+    var number = 8; //primitive
+    var boolean = true; //primitive
+    
+    var zero = null; //special
+    var undef; //special
                     </textarea>
-                    <p>Variables with the "null" value means there is nothing store in the variable or the variable is zero. While variables without any assignment operation are undefined.</p>
-                    <textarea name="var-declaration" rows="5" cols="35">
+                    <p>Just like any other programming languages, JavaScript also has its primitive, composite and special data types.</p>
+                    <p>String, number and boolean are primitive data types. Strings represent plain text in JavaScript. These texts are closed in double quotation marks or single quotation marks. Numbers in JavaScript do not need to be specified as an integer or floating-point values, however, JavaScript takes all numbers as floating-point values.</p>
+                    <p>Variables with the "null" value means there is nothing store in the variable or the variable is zero. While variables without any assignment operation are undefined. Composite data types include Object and Array, which would be discussed later on.</p>         
+                    <textarea name="data-types-ex" rows="4" cols="30">
     var animal = "cat";
     animal = "dog";
     animal = 5;
                     </textarea>
-                    <h5>Data Types</h5>
+                    <p>As mentioned earlier, JavaScript is a dynamic programming language. A variable given a string value could be changed into a number or boolean during the making or execution of the codes.</p>
+                    <p></p>
                     <h5>Operators</h5>
                     <h5>Operator Precedence</h5>
                     <!-- patrick start here -->
