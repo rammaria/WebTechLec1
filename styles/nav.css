@@ -22,21 +22,21 @@ nav ul li{
     text-align: center;
 }
 
-nav .dropdown .dropdown-button:hover .dropdown-content{
-    height: auto;
+nav .dropdown {
+    transition: 1s ease;
+}
+
+nav .dropdown .dropdown-button:hover .dropdown-content {
+    height: 85px;
 }
 
 nav .dropdown-content{
+    transition: 1s ease;
     position: absolute;
     overflow: hidden;
     height: 0px;
-    transition: all 1.5s ease;
     background-color: white;
     width: 20%;
-}
-
-nav .dropdown-content:hover{
-    height: auto;
 }
 
 nav .dropdown-content a{
