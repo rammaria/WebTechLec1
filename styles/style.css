@@ -54,7 +54,6 @@ body {
     height: 100vh;
     overflow: hidden;
     background: linear-gradient(to bottom, #3b2458 0%, #79337A 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    position: relative;
    
 }
 
