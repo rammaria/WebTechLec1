@@ -10,10 +10,22 @@ body {
     color: white;
     display: table;
     text-align: center;
+    overflow: hidden;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#472c68+0,79337a+52,c96d58+100 */
+    background: #472c68; /* Old browsers */
+    background: -moz-linear-gradient(top, #472c68 0%, #79337a 52%, #c96d58 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #472c68 0%,#79337a 52%,#c96d58 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #472c68 0%,#79337a 52%,#c96d58 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#472c68', endColorstr='#c96d58',GradientType=0 ); /* IE6-9 */    
 }
 
 #hero-banner #heading{
     margin: 0;
+}
+
+#hero-banner .wrapper{
+    height: 100%;
+    width: 100%;
     display: table-cell;
     vertical-align: middle;
 }
@@ -39,9 +51,10 @@ body {
 
 #term-topics{
     grid-column: 1;
-    background-color: rgba(53, 114, 102, 1);
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
+    background: linear-gradient(to bottom, #3b2458 0%, #79337A 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   
 }
 
 .fixed-nav{
@@ -87,19 +100,17 @@ body {
 }
 
 #term-topics ul li{
-}
-
-#term-topics ul li{
     padding: 2vh;
 }
 
 
 #term-topics ul li:hover{
-    background-color: rgba(0, 0, 0, 0.44);
+    background: linear-gradient(to right, #140c1f 0%, #2f142f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
 }
 
 #term-topics #topics-nav ul .active{
-    background-color: rgba(0, 0, 0, 0.44);
+    background: linear-gradient(to left, #140c1f 0%, #2f142f 100%);
 }
 
 #term-topics #topics-nav ul .active a{
