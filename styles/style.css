@@ -4,7 +4,7 @@ body {
 }
 
 #hero-banner {
-    height: 100vh;
+    height: 95.1vh;
     width: 100%;
     background: black;
     color: white;
@@ -18,6 +18,7 @@ body {
 #hero-banner #heading{
     margin: 0;
     font-size: 100px;
+    width: auto;
 }
 
 #particles-js{
@@ -48,24 +49,25 @@ body {
 }
 
 .index-content {
-    margin-top: 0%;
+    position: absolute;
+    margin-top: -15%;
     color: #fff;
 }
 
 .index-content h2 {
-    background-color: black;
     margin: 0;
     padding: 30;
     font-size: 30px;
     float: left;
     margin-left: 50px;
+    background-color: #000;
 }
 
 .index-content ul {
     float: right;
     list-style-type: none;
-    background-color: black;
     margin-right: 50px;
+    background-color: #000;
 }
 
 .index-content ul li {
