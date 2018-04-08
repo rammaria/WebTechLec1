@@ -11,16 +11,28 @@ body {
     display: table;
     text-align: center;
     overflow: hidden;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#472c68+0,79337a+52,c96d58+100 */
-    background: #472c68; /* Old browsers */
-    background: -moz-linear-gradient(top, #472c68 0%, #79337a 52%, #c96d58 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #472c68 0%,#79337a 52%,#c96d58 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #472c68 0%,#79337a 52%,#c96d58 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#472c68', endColorstr='#c96d58',GradientType=0 ); /* IE6-9 */    
+    background: linear-gradient(to bottom, #1c1129 0%,#562457 72%,#8e4939 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        
 }
 
 #hero-banner #heading{
     margin: 0;
+}
+
+#particles-js{
+    width: 100%;
+    position: absolute;
+}
+
+#hero-banner .wrapper img{
+    position: absolute;
+    margin-top: -20vh;
+    z-index: -9;
+    opacity: .4;
+}
+
+#hero-banner .wrapper #smallstars{
+    opacity: .1;
 }
 
 #hero-banner .wrapper{
@@ -28,6 +40,7 @@ body {
     width: 100%;
     display: table-cell;
     vertical-align: middle;
+    position: relative;
 }
 
 #ans{
