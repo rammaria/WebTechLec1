@@ -4,7 +4,7 @@ body {
 }
 
 #hero-banner {
-    height: 75vh;
+    height: 100vh;
     width: 100%;
     background: black;
     color: white;
@@ -17,6 +17,7 @@ body {
 
 #hero-banner #heading{
     margin: 0;
+    font-size: 100px;
 }
 
 #particles-js{
@@ -43,6 +44,9 @@ body {
     position: relative;
 }
 
+.index-content {
+    position: 
+}
 #ans{
     color: white;
 }
@@ -144,7 +148,7 @@ body {
 #term-topics ::-webkit-scrollbar-thumb {
     border-radius: 10px;
 }
+
 #term-topics ::-webkit-scrollbar-thumb:hover {
     background: #555; 
 }
-
