@@ -3,7 +3,6 @@ nav {
     font-size: 1.5em;
     background-color: #1c1129;
     color: #fff;
-    z-index: 999;
 }
 
 nav ul {
@@ -18,6 +17,10 @@ nav a{
     color: inherit;
 }
 
+nav a:hover {
+    color:#969696;
+}
+
 nav ul li{
     display: inline;
     padding: 10px;
@@ -26,11 +29,7 @@ nav ul li{
 }
 
 nav .dropdown {
-    
-}
-
-.dropdown-content a {
-    color: #000;
+    transition: 1s ease;
 }
 
 nav .dropdown .dropdown-button:hover .dropdown-content {
@@ -43,6 +42,8 @@ nav .dropdown-content {
     height: 0px;
     transition: all 1.5 ease;
     width: 20%;
+    color: #fff;
+    z-index: 10;
 }
 
 nav .dropdown-content:hover {

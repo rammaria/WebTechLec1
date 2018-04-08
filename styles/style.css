@@ -4,7 +4,6 @@ body {
 }
 
 #hero-banner {
-    margin-top: 20px;
     height: 100vh;
     width: 100%;
     background: black;
@@ -175,14 +174,5 @@ body {
 
 #term-topics ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-<<<<<<< HEAD
-}
-
-#term-topics ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-}
-=======
     background: rgb(178, 80, 44);
 }
-
->>>>>>> 3bb630a703be47d00c08dd68f3a8cb2af659912a
