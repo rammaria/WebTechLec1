@@ -4,6 +4,7 @@ body {
 }
 
 #hero-banner {
+    margin-top: 5px;
     height: 100vh;
     width: 100%;
     background: black;
@@ -12,7 +13,6 @@ body {
     text-align: center;
     overflow: hidden;
     background: linear-gradient(to bottom, #1c1129 0%,#562457 72%,#8e4939 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        
 }
 
 #hero-banner #heading{
@@ -45,7 +45,29 @@ body {
 }
 
 .index-content {
-    position: 
+    margin-top: 0%;
+    color: #fff;
+}
+
+.index-content h2 {
+    background-color: black;
+    margin: 0;
+    padding: 30;
+    font-size: 30px;
+    float: left;
+    margin-left: 50px;
+}
+
+.index-content ul {
+    float: right;
+    list-style-type: none;
+    background-color: black;
+    margin-right: 50px;
+}
+
+.index-content ul li {
+    padding: 10px;
+    margin-right: 50px;
 }
 #ans{
     color: white;
