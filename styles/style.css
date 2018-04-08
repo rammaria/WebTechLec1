@@ -54,6 +54,7 @@ body {
     height: 100vh;
     overflow: hidden;
     background: linear-gradient(to bottom, #3b2458 0%, #79337A 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    position: relative;
    
 }
 
@@ -121,3 +122,16 @@ body {
     text-decoration: none;
     color: rgba(255, 255, 255, 1);
 }
+
+#term-topics ::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+
+#term-topics ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+}
+#term-topics ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
