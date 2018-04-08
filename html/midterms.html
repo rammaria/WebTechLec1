@@ -234,7 +234,7 @@
     var myNumber = 123456789;
                     </textarea>
                     <p>Naming conventions are supposed to be always followed. If in case the name of your variable contains two or more words, only capitalize the first letter of the second (or third or fourth or fifth, if there are) word like shown above. Also, variable names should not start with symbols and numbers.</p>
-                    
+
                     <h5>Data Types</h5>
                     <textarea name="data-types-ex" rows="7" cols="50">
     var string = "I am a string"; //primitive
@@ -246,7 +246,7 @@
                     </textarea>
                     <p>Just like any other programming languages, JavaScript also has its primitive, composite and special data types.</p>
                     <p>String, number and boolean are primitive data types. Strings represent plain text in JavaScript. These texts are closed in double quotation marks or single quotation marks. Numbers in JavaScript do not need to be specified as an integer or floating-point values, however, JavaScript takes all numbers as floating-point values.</p>
-                    <p>Variables with the "null" value means there is nothing store in the variable or the variable is zero. While variables without any assignment operation are undefined. Composite data types include Object and Array, which would be discussed later on.</p>         
+                    <p>Variables with the "null" value means there is nothing store in the variable or the variable is zero. While variables without any assignment operation are undefined. Composite data types include Object and Array, which would be discussed later on.</p>
                     <textarea name="data-types-ex" rows="4" cols="30">
     var animal = "cat";
     animal = "dog";
@@ -255,46 +255,104 @@
                     <p>As mentioned earlier, JavaScript is a dynamic programming language. A variable given a string value could be changed into a number or boolean during the making or execution of the codes.</p>
                     <p></p>
                     <h5>Operators</h5>
-                    <div id="operators">
+                    <div id="operators-tables">
                         <table class="tables" id="computational-table">
                             <caption>Computational Operators</caption>
                             <tr>
+                                <th colspan="3">Operators used in arithmetic computations.</th>
+                            </tr>
+                            <tr>
                                 <th>Symbol</th>
                                 <th>Description</th>
+                                <th>Example</th>
                             </tr>
                             <tr>
                                 <th>+</th>
                                 <th>Addition</th>
+                                <th>
+                                    <textarea name="operator-ex" rows="3" cols="50">
+    var x = 1 + 2;
+    console.log(x); //should print 3
+                                    </textarea>
+                                </th>
                             </tr>
                             <tr>
                                 <th>-</th>
-                                <th>Negation
-                                    Subtraction
+                                <th>
+                                    <table class="tables">
+                                        <tr><th>Subtraction</th></tr>
+                                        <tr><th>Negation</th></tr>
+                                    </table>
+                                </th>
+                                <th>
+                                    <textarea name="operator-ex" rows="6" cols="50">
+    var x = 5 - 2;
+    console.log(x); //should print 3
+    var y = -(5 + 7);
+    console.log(x); //should print -12
+                                    </textarea>
                                 </th>
                             </tr>
                             <tr>
                                 <th>*</th>
                                 <th>Multiplication</th>
+                                <th>
+                                    <textarea name="operator-ex" rows="3" cols="50">
+    var x = 5 * 7;
+    console.log(x); //should print 35
+                                    </textarea>
+                                </th>
                             </tr>
                             <tr>
                                 <th>/</th>
                                 <th>Division</th>
+                                <th>
+                                    <textarea name="operator-ex" rows="3" cols="50">
+    var x = 10 / 2;
+    console.log(x); //should print 5
+                                    </textarea>
+                                </th>
                             </tr>
                             <tr>
                                 <th>%</th>
                                 <th>Modulo</th>
+                                <th>
+                                    <textarea name="operator-ex" rows="3" cols="50">
+    var x = 5 % 3;
+    console.log(x); //should print 2
+                                    </textarea>
+                                </th>
                             </tr>
                             <tr>
                                 <th>++</th>
                                 <th>Increment</th>
+                                <th>
+                                    <textarea name="operator-ex" rows="5" cols="50">
+    var x = 7++;
+    console.log(x); //should print 8
+    console.log(x); //should print 9
+    console.log(x); //should print 10
+                                    </textarea>
+                                </th>
                             </tr>
                             <tr>
                                 <th>--</th>
                                 <th>Decrement</th>
+                                <th>
+                                    <textarea name="operator-ex" rows="5" cols="50">
+    var x = 11--;
+    console.log(x); //should print 10
+    console.log(x); //should print 9
+    console.log(x); //should print 8
+                                    </textarea>
+                                </th>
                             </tr>
                         </table>
                         <table class="tables" id="logical-table">
-                            <caption>Logical Operators</caption>
+                            <caption>Comparison Operators</caption>
+                            <tr>
+                                <th colspan="3">Operators used to compare two values to each other, returns a boolean.</th>
+                            </tr>
                             <tr>
                                 <th>Symbol</th>
                                 <th>Description</th>
@@ -302,38 +360,184 @@
                             <tr>
                                 <th>&lt;</th>
                                 <th>Less Than</th>
+                                <th>
+                                    <textarea name="operator-ex" rows="5" cols="50">
+    var x = 10 &lt; 2;
+    console.log(x); //should return false
+    var y = 5 &lt; 10;
+    console.log(y); //should return true
+                                    </textarea>
+                                </th>
                             </tr>
                             <tr>
                                 <th>&gt;</th>
                                 <th>Greater Than</th>
-                            </tr>
-                            <tr>
-                                <th>!</th>
-                                <th>NOT Operator</th>
+                                <th>
+                                    <textarea name="operator-ex" rows="5" cols="50">
+    var x = 10 &gt; 2;
+    console.log(x); //should return true
+    var y = 5 &gt; 10;
+    console.log(y); //should return false
+                                    </textarea>
+                                </th>
                             </tr>
                             <tr>
                                 <th>==</th>
                                 <th>Equality</th>
+                                <th>
+                                    <textarea name="operator-ex" rows="7" cols="50">
+    var x = 10 == 10;
+    console.log(x); //should return true
+    var y = 10 == "10";
+    console.log(x); //should return true
+    var z = 1 == true;
+    console.log(x); //should return true
+                                    </textarea>
+                                </th>
                             </tr>
                             <tr>
                                 <th>!=</th>
                                 <th>Inequality</th>
+                                <th>
+                                    <textarea name="operator-ex" rows="7" cols="50">
+    var x = 10 != 10;
+    console.log(x); //should return false
+    var y = 10 != "10";
+    console.log(x); //should return false
+    var z = 1 != true;
+    console.log(x); //should return false
+                                    </textarea>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>&lt;=</th>
+                                <th>Less Than or Equal To</th>
+                                <th>
+                                    <textarea name="operator-ex" rows="7" cols="50">
+    var x = 5 &lt;= 6;
+    console.log(x); //should return true
+    var y = 7 &lt;= 7;
+    console.log(y); //should return true
+    var z = 8 &lt;= 4;
+    console.log(z); //should return false 
+                                    </textarea>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>&gt;=</th>
+                                <th>Greater Than or Equal To</th>
+                                <th>
+                                    <textarea name="operator-ex" rows="7" cols="50">
+    var x = 5 &gt;= 6;
+    console.log(x); //should return false
+    var y = 7 &gt;= 7;
+    console.log(y); //should return true
+    var z = 8 &gt;= 4;
+    console.log(z); //should return true 
+                                    </textarea>
+                                </th>
                             </tr>
                             <tr>
                                 <th>===</th>
                                 <th>Strict Equality</th>
+                                <th>
+                                    <textarea name="operator-ex" rows="7" cols="50">
+    var x = 2 === 2;
+    console.log(x); //should return true
+    var y = 2 === "2";
+    console.log(x); //should return false
+    var z = 1 === true;
+    console.log(z); //should return false
+                                    </textarea>
+                                </th>
                             </tr>
                             <tr>
                                 <th>!==</th>
                                 <th>Strict Inequality</th>
+                                <th>
+                                    <textarea name="operator-ex" rows="7" cols="50">
+    var x = 2 !== 2;
+    console.log(x); //should return false
+    var y = 2 !== "2";
+    console.log(x); //should return true
+    var z = 1 === true;
+    console.log(z); //should return false
+                                    </textarea>
+                                </th>
+                            </tr>
+                        </table>
+                        <table>
+                            <caption>Logical Operators</caption>
+                            <tr>
+                                <th colspan="3">This type of operators must be used with comparison operators.</th>
+                            </tr>
+                            <tr>
+                                <th>Symbol</th>
+                                <th>Description</th>
                             </tr>
                             <tr>
                                 <th>&&</th>
-                                
+                                <th>AND Operator</th>
+                                <th>
+                                    <textarea name="operator-ex" rows="4" cols="61">
+    console.log(5 &gt; 3 && 7 &gt; 4); //should print true
+    console.log(7 &gt; 10 && 8 &lt; 11); //should print false
+    console.log(8 &lt; 7 && 2 &gt; 4); //should return false
+                                    </textarea>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>||</th>
+                                <th>OR Operator</th>
+                                <th>
+                                    <textarea name="operator-ex" rows="4" cols="61">
+    console.log(5 &gt; 3 || 7 &gt; 4); //should print true
+    console.log(7 &gt; 10 || 8 &lt; 11); //should print true
+    console.log(8 &lt; 7 || 2 &gt; 4); //should return false
+                                    </textarea>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>!</th>
+                                <th>NOT Operator</th>
+                                <th>
+                                    <textarea name="operator-ex" rows="13" cols="61">
+    console.log(!(5 &gt; 10)); //should return true
+                                        
+    console.log(!(5 &gt; 3 && 7 &gt; 4)); //should print false
+    console.log(!(7 &gt; 10 && 8 &lt; 11)); //should print true
+    console.log(!(8 &lt; 7 && 2 &gt; 4)); //should return true                                    
+                                        
+    console.log(!(5 &gt; 3 || 7 &gt; 4)); //should print false
+    console.log(!(7 &gt; 10 || 8 &lt; 11)); //should print false
+    console.log(!(8 &lt; 7 || 2 &gt; 4)); //should return true
+                                    </textarea>
+                                </th>
+                            </tr>
+                        </table>
+                        <table class="tables" id="ternary-table">
+                            <caption>Conditional (Ternary) Coperator</caption>
+                            <tr>
+                                <th colspan="3">Operator that returns an expression or statement based based on the condition given.</th>
+                            </tr>
+                            <tr>
+                                <th>Symbol</th>
+                                <th>Example</th>
+                            </tr>
+                            <tr>
+                                <th>(condition) ? (statement1) : (statement2)</th>
+                                <th>
+                                    <textarea name="ternary-ex" rows="4" cols="70">
+   if (5 &gt; 3) ? console.log("tru") : console.log("nu");
+   // the first statement will execute since 5 is greater than 3
+                                    </textarea>
+                                </th>
                             </tr>
                         </table>
                     </div>
                     <h5>Operator Precedence</h5>
+                    <p>Operator Precedence is the order of how operations are performed when an expression is being evaluated.</p>
+                    
                     <!-- patrick start here -->
                     <h5>Program Flow</h5>
                     <h5>Functions</h5>
@@ -354,6 +558,8 @@
                     <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3">CSS3</a></li>
                     <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule">At-rules</a></li>
                     <li><a href="https://css-tricks.com/the-at-rules-of-css/">At-rules</a></li>
+                    <li><a href="https://docs.microsoft.com/en-us/scripting/javascript/javascript-fundamentals">Java Script Fundamentals</a></li>
+                    <li><a href="https://www.w3schools.com/jsref/jsref_operators.asp">JavaScript Operators</a></li>
                 </ul>
             </div>
         </div>
