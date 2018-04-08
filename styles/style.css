@@ -12,6 +12,7 @@ body {
     text-align: center;
     overflow: hidden;
     background: linear-gradient(to bottom, #1c1129 0%,#562457 72%,#8e4939 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    position: relative;
         
 }
 
@@ -21,18 +22,21 @@ body {
 
 #particles-js{
     width: 100%;
+    height: 100%;
     position: absolute;
 }
 
 #hero-banner .wrapper img{
     position: absolute;
-    margin-top: -20vh;
     z-index: -9;
-    opacity: .4;
+    opacity: .2;
 }
 
-#hero-banner .wrapper #smallstars{
-    opacity: .1;
+#hero-banner .wrapper #ds{
+    width: 5vh;
+    margin-top: 10vh;
+    margin-left: 50vh;
+    z-index: -9999;
 }
 
 #hero-banner .wrapper{
@@ -72,10 +76,9 @@ body {
 }
 
 .fixed-nav{
-    position: fixed;
+    position: fixed !important;
     top: 0;
     width: 20%;
-    
 }
 
 #term-topics h3{
@@ -119,7 +122,7 @@ body {
 
 
 #term-topics ul li:hover{
-    background: linear-gradient(to right, #140c1f 0%, #2f142f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: linear-gradient(to left, #140c1f 0%, #2f142f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
 }
 
@@ -136,15 +139,17 @@ body {
     color: rgba(255, 255, 255, 1);
 }
 
-#term-topics ::-webkit-scrollbar{
+#term-topics:hover ::-webkit-scrollbar{
     width: 10px;
+}
+
+#term-topics ::-webkit-scrollbar{
+    width: 0px;
     border-radius: 10px;
 }
 
 #term-topics ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-}
-#term-topics ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: rgb(178, 80, 44);
 }
 
