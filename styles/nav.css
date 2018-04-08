@@ -3,6 +3,7 @@ nav {
     font-size: 1.5em;
     background-color: #1c1129;
     color: #fff;
+    z-index: 999;
 }
 
 nav ul {
