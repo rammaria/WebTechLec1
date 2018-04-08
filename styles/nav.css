@@ -8,7 +8,6 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-around;
 }
 
 nav a{
@@ -19,26 +18,25 @@ nav a{
 nav ul li{
     display: inline;
     padding: 10px;
+    width: 20%;
+    text-align: center;
 }
 
-nav .dropdown{
-    display: inline-block;
+nav .dropdown {
+    transition: 1s ease;
 }
 
-nav .dropdown .dropdown-button:hover + .dropdown-content{
-    height: auto;
+nav .dropdown .dropdown-button:hover .dropdown-content {
+    height: 85px;
 }
 
 nav .dropdown-content{
+    transition: 1s ease;
     position: absolute;
     overflow: hidden;
     height: 0px;
-    transition: all 1.5s ease;
     background-color: white;
-}
-
-nav .dropdown-content:hover{
-    height: auto;
+    width: 20%;
 }
 
 nav .dropdown-content a{
