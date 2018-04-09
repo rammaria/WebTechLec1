@@ -49,7 +49,7 @@ body {
 }
 
 #mini-hero-banner{
-    height: 20vh;
+    height: 25vh;
     background: linear-gradient(to bottom, #1c1129 0%,#562457 72%,#8e4939 100%);
     display: table;
     width: 100%;
