@@ -255,8 +255,8 @@
 
             <div id="scripting"> <a class="topiclink" name="scripting"></a>
                 <h3 name="web-scripting">Client-Side Web Scripting</h3>
-                <div id="javascript">
-                    <h4>JavaScript Fundamentals</h4> <a class="topiclink" name="javascript"></a>
+                <div id="javascript"><a class="topiclink" name="javascript"></a>
+                    <h4>JavaScript Fundamentals</h4> 
                     <p>Before knowing the fundamentals of JavaScript, we have to know what JavaScript is. JavaScript is a dynamic programming language that is applied to an HTML file, it then can provide different interactivities to the websites.</p>
 
                     <h5>Variable & Constant Declaration</h5>
@@ -315,7 +315,7 @@
                             <tr>
                                 <th>-</th>
                                 <th>
-                                    <table class="tables">
+                                    <table class="subtables">
                                         <tr>
                                             <th>Subtraction</th>
                                         </tr>
@@ -570,6 +570,111 @@
                                     <textarea name="ternary-ex" rows="4" cols="70">
    if (5 &gt; 3) ? console.log("tru") : console.log("nu");
    // the first statement will execute since 5 is greater than 3
+                                    </textarea>
+                                </th>
+                            </tr>
+                        </table>
+                        <table class="tables" id="assignment-operators">
+                            <caption><a name="assignment-operators">Assignment Operators</a></caption>
+                            <tr>
+                                <th colspan="3">Operators used to assign values to variables.</th>
+                            </tr>
+                            <tr>
+                                <th>Symbol</th>
+                                <th>Example</th>
+                            </tr>
+                            <tr>
+                                <th>=</th>
+                                <th>
+                                    <textarea name="assignment-ex" rows="5" cols="60">
+   var x = 5;
+   console.log(x); // should print 5
+   var y = x;
+   console.log(y); // should also print 5
+                                    </textarea>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>+=</th>
+                                <th>
+                                    <textarea name="assignment-ex" rows="5" cols="60">
+   var x = 5;
+   console.log(x); // should print 5
+   var x += 9; // adding 9 to x like x = x + 9;
+   console.log(x); // should print 14
+                                    </textarea>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>-=</th>
+                                <th>
+                                    <textarea name="assignment-ex" rows="5" cols="60">
+   var x = 8;
+   console.log(x); // should print 8
+   var x -= 7; // subtracting 7 from x like x = x - 7;
+   console.log(x); // should print 7
+                                    </textarea>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>*=</th>
+                                <th><textarea name="assignment-ex" rows="5" cols="60">
+   var x = 5;
+   console.log(x); // should print 5
+   var x *= 6; // multiplying 6 to x like x = x * 6;
+   console.log(x); // should print 30
+                                    </textarea></th>
+                            </tr>
+                            <tr>
+                                <th>/=</th>
+                                <th><textarea name="assignment-ex" rows="5" cols="60">
+   var x = 36;
+   console.log(x); // should print 36
+   var x /= 3; // dividing x by 3 like x = x / 3;
+   console.log(x); // should print 12
+                                    </textarea></th>
+                            </tr>
+                            <tr>
+                                <th>%=</th>
+                                <th>
+                                    <textarea name="assignment-ex" rows="6" cols="60">
+   var x = 10;
+   console.log(x); // should print 10
+   var x %= 3; // dividing x by 3 and returning 
+                // the remainder like x = x % 3;
+   console.log(x); // should print 1
+                                    </textarea>
+                                </th>
+                            </tr>
+                        </table>
+                        <table>
+                            <caption><a name="string-operators">String Operators</a></caption>
+                            <tr>
+                                <th colspan="3">Operators used to concatenate strings.</th>
+                            </tr>
+                            <tr>
+                                <th>Symbol</th>
+                                <th>Example</th>
+                            </tr>
+                            <tr>
+                                <th>+</th>
+                                <th>
+                                    <textarea name="concatenate-ex" rows="5" cols="60">
+   var x = "Web ";
+   vay y = "Technology";
+   var z = x + y;
+   console.log(z); // should print "Web Technology"
+                                    </textarea>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>+=</th>
+                                <th>
+                                    <textarea name="concatenate-ex" rows="5" cols="60">
+   var x = "Web ";
+   vay y = "Technology";
+   x += y;
+   console.log(x); // should print "Web Technology"
                                     </textarea>
                                 </th>
                             </tr>
