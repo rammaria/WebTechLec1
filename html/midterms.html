@@ -687,14 +687,14 @@
                     <h5>Program Flow</h5>
                     <p>The Program Flow for JavaScript is sequential execution or follows the order of how the code is written and each line is executed one after the other. The program flow can be changed using control flow statements.</p>
                     <h6>Conditional Statements</h6>
-                    <p>Conditional Statemetns are used to change the Program Flow by executing a set of code if a specific condition is satisfied. JavaScript uses the if, if...else, and switch conditional statements</p>
-                    <p>The if statement is used to execute a set of code if a condition is true.</p>
+                    <p><a name="conditional-statements"></a>Conditional Statemetns are used to change the Program Flow by executing a set of code if a specific condition is satisfied. JavaScript uses the if, if...else, and switch conditional statements</p>
+                    <p>The <a name="if-statement"></a>if statement is used to execute a set of code if a condition is true.</p>
                     <textarea name="data-types-ex" rows="4" cols="30">
     if (animal == "cat") {
         greet = "Meow";
     }
                     </textarea>
-                    <p>A different kind of the if statement is the if..else statement. The if...else statement executes a set of code if a condition is true and executes a different set of code if the condition is not true.</p>
+                    <p><a name="if-else-statement"></a>A different kind of the if statement is the if..else statement. The if...else statement executes a set of code if a condition is true and executes a different set of code if the condition is not true.</p>
                     <textarea name="data-types-ex" rows="6" cols="45">
     if (animal == "cat") {
         greet = "Meow";
@@ -712,7 +712,7 @@
         greet = "Roar";            
     }
                     </textarea>
-                    <p>A switch statement is similar to the if..else if statement. In a switch statement, an expression is compared to multiple cases and if the expression matches a case, the code associated with the case will be executed. If the expression doesn't match with any of the cases, the code in the default statement will be executed</p>
+                    <p><a name="switch-statement"></a>A switch statement is similar to the if..else if statement. In a switch statement, an expression is compared to multiple cases and if the expression matches a case, the code associated with the case will be executed. If the expression doesn't match with any of the cases, the code in the default statement will be executed</p>
                     <textarea name="data-types-ex" rows="12" cols="40">
     switch (animal) {
     case "Cat:
@@ -726,10 +726,10 @@
     }
                     </textarea>
                     <h6>Loops</h6>
-                    <p>Loops are used to run the same set of code multiple times with the values usually different from the previous iteration of the loop. JavaScript incorporates multiple kinds of loops: for loops, for/in loop, while loop, and do/while loop.</p>
+                    <p><a name="loops"></a>Loops are used to run the same set of code multiple times with the values usually different from the previous iteration of the loop. JavaScript incorporates multiple kinds of loops: for loops, for/in loop, while loop, and do/while loop.</p>
                     <p>A for loop is a loop that has a specified counter variable, test condition, and counter iterator statement. Before the for loop is executed, the test condition has to be first satisfied. After completing the set of code inside the loop, the counter is changed according to the specified counter  iterator and the condition is tested again and it repeats the process until the condition is no longer satisfied </p>
                     <textarea name="data-types-ex" rows="5" cols="40">
-    for (i = 0; i < 10; i++) {
+    for (i = 0; i &lt; 10; i++) {
         age = i;         
     }
                     </textarea>
@@ -754,7 +754,7 @@
     while(day = birthday);
                     </textarea>    
                     <h5>Functions</h5>
-                    <p>A function is a combination of several operations and statements under a name. The function executes the entire set of code by calling it and giving it the values it needs. JavaScript has it's own Built-In but it also allows functions to be defined by the programmer.</p>
+                    <p><a name="function"></a>A function is a combination of several operations and statements under a name. The function executes the entire set of code by calling it and giving it the values it needs. JavaScript has it's own Built-In but it also allows functions to be defined by the programmer.</p>
                     <p>Functions are defined by using the function keyword followed by the function's name, the parameters of the function enclosed by parentheses and separated by commas if there are multiple parameters, and the JavaScript statements enclosed by curly brackets.</p>
                     <textarea name="data-types-ex" rows="8" cols="40">
     function ifEven(number) {
@@ -771,7 +771,7 @@
     ifEven(8); //will return true     
                     </textarea>
                     <h5>Objects</h5>
-                    <p>An Object is simply a collection of functions and values. When a function is a member of an object, it's called a method. A value that is a member of an object is called a property.</p>
+                    <p>An <a name="object"></a>Object is simply a collection of functions and values. When a function is a member of an object, it's called a method. A value that is a member of an object is called a property.</p>
                     <p>Defining an object is similar to a variable because an object is essentially just a variable with multiple values and functions. Object definition can be done in a single line or in multiple lines.</p>
                     <textarea name="data-types-ex" rows="7" cols="70">
     var pet = {
@@ -792,7 +792,7 @@
     name = pet.petName();
                     </textarea>
                     <h5>Arrays</h5>
-                    <p>An array is a variable that can store multiple values. The difference between Arrays and Objects is that Arrays use numbered indexes while objects use named indexes.</p>
+                    <p><a name="array"></a>An array is a variable that can store multiple values. The difference between Arrays and Objects is that Arrays use numbered indexes while objects use named indexes.</p>
                     <p>Creating an Array is similar to creating an object. Values can be written in a single line or be divided into multiple lines.</p>
                     <textarea name="data-types-ex" rows="9" cols="60">
     var animals = ["Cat", "Dog", "Bird", "Fish"];
