@@ -3,6 +3,9 @@ nav {
     font-size: 1.5em;
     background-color: #1c1129;
     color: #fff;
+    position: absolute;
+    z-index: 99;
+    width: 100%;
 }
 
 nav ul {
@@ -32,15 +35,16 @@ nav .dropdown {
     transition: 1s ease;
 }
 
-nav .dropdown .dropdown-button:hover .dropdown-content {
-    height: auto;
+nav .dropdown .dropdown-button:hover .dropdown-content a{
+    transform: scaleY(1);
+    transform-origin: 50% 0;
 }
 
 nav .dropdown-content {
     position: absolute;
     overflow: hidden;
-    height: 0px;
-    transition: all 1.5 ease;
+    height: auto;
+    transition: all .5s ease;
     width: 20%;
     color: #fff;
     z-index: 10;
@@ -48,8 +52,18 @@ nav .dropdown-content {
 
 nav .dropdown-content:hover {
     height: auto;
+    
 }
 
 nav .dropdown-content a{
     display: block;
+    transition: all .1s ease;
+    transform: scaleY(0);
+    transform-origin: 50% 0;
+    background-color: #1c1129;
+    padding: 1vh;
+}
+
+nav .dropdown-content a:last-child{
+    border-bottom: 4px solid #8e4939
 }

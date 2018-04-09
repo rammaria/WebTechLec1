@@ -4,7 +4,7 @@ body {
 }
 
 #hero-banner {
-    height: 95.1vh;
+    height: 100%;
     width: 100%;
     background: black;
     color: white;
@@ -21,7 +21,7 @@ body {
     width: auto;
 }
 
-#particles-js{
+#hero-banner #particles-js{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -40,12 +40,39 @@ body {
     z-index: -9999;
 }
 
-#hero-banner .wrapper{
+.wrapper{
     height: 100%;
     width: 100%;
     display: table-cell;
     vertical-align: middle;
     position: relative;
+}
+
+#mini-hero-banner{
+    height: 20vh;
+    background: linear-gradient(to bottom, #1c1129 0%,#562457 72%,#8e4939 100%);
+    display: table;
+    width: 100%;
+    text-align: center;
+    z-index: -2;
+    position: relative;
+}
+
+#mini-hero-banner h1{
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+
+#mini-hero-banner #particles-js{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+a{
+    color: #ff4115;
+    text-decoration: none;
 }
 
 .index-content {
@@ -124,12 +151,14 @@ body {
     padding: 3vh;
     opacity: .99;
     z-index: 99;
+    background: linear-gradient(to bottom, #18243F 0%, #301c30 100%) ;
+    color: #C96D58;
 }
 
 #term-topics > div{
     margin: 0;
     overflow: auto;
-    height: 90vh;
+    height: 93vh;
     position: relative;
     z-index: 0;
 }
