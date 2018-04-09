@@ -117,8 +117,32 @@ a{
 
 .page-content #topic-content{
     grid-column: 2;
+}
+
+.page-content #topic-content div:nth-child(odd){
     padding: 5vh 10vh 5vh 10vh;
     background-color: #f2e9e4;
+}
+
+.page-content #topic-content div:nth-child(even){
+    padding: 5vh 10vh 5vh 10vh;
+    background-color: #fff7f3;
+}
+
+.page-content #topic-content div h3{
+    padding: 2vh;
+    background-color: #442958;
+    text-align: center;
+    border-radius: 10vh;
+    color: #ffffff;
+}
+
+.page-content #topic-content div h4{
+    color: #000000;
+}
+
+.page-content #topic-content div p, .page-content #topic-content div li{
+    color: #303030;
 }
 
 .glossary-content{
@@ -240,6 +264,7 @@ table td {
 table caption{
     font-weight: bold;
 }
+
 
 footer{
     position: fixed;

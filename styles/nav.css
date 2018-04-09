@@ -3,7 +3,7 @@ nav {
     font-size: 1.5em;
     background-color: #1c1129;
     color: #fff;
-    position: absolute;
+    position: static;
     z-index: 99;
     width: 100%;
 }
