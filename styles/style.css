@@ -264,3 +264,19 @@ table caption{
 .heading{
     
 }
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    color: white;
+    background: #4a344e;
+    
+}
+
+footer p{ 
+   padding: 0;
+    margin: 3px;
+}
