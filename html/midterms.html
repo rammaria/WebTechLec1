@@ -258,6 +258,34 @@
                 <div id="javascript"><a class="topiclink" name="javascript"></a>
                     <h4>JavaScript Fundamentals</h4> 
                     <p>Before knowing the fundamentals of JavaScript, we have to know what JavaScript is. JavaScript is a dynamic programming language that is applied to an HTML file, it then can provide different interactivities to the websites.</p>
+                    <p>JavaScript was made by Brendan Eich in 1995, then became a European Computer Manufacturer's Association (ECMA) standard in 1997.</p>
+                    <p>JavaScript can be linked or embedded in your HTML file.</p>
+                    <ul>
+                        <li>Linked</li>
+                        <textarea name="linked-js" rows="7" cols="50">
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+
+        &lt;head&gt;
+            &lt;script src="myscript.js"&gt;&lt;/script&gt;
+        &lt;/head&gt;
+                        </textarea>
+                        <li>Embedded</li>
+                        <textarea name="linked-js" rows="11" cols="50">
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+        
+        &lt;body&gt;
+            // HTML codes here, if any
+            &lt;script&gt;
+                //JavaScript codes here
+            &lt;/script&gt;
+            // Some more HTML codes here
+        &lt;body&gt;
+                        </textarea>
+                    </ul>
+                    
+                    <p>HTML has a &lt;script&gt; tag used to define a JavaScript file. This tag has two attribute: defer and async. The defer attribute needs the whole HTML document to be parsed first before the browser can run the JavaScript file. The async attribute tells the browser that the JavaScript file can be executed asynchronously.</p>
 
                     <h5>Variable & Constant Declaration</h5>
                     <textarea name="var-declaration" rows="5" cols="75">
@@ -290,6 +318,7 @@
                     </textarea>
                     <p>As mentioned earlier, JavaScript is a dynamic programming language. A variable given a string value could be changed into a number or boolean during the making or execution of the codes.</p>
                     <p></p>
+                    
                     <h5>Operators</h5>
                     <div id="operators-tables">
                         <table class="tables" id="computational-table">
