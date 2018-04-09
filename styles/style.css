@@ -242,3 +242,36 @@ table caption{
 }
 
 
+<<<<<<< HEAD
+=======
+.title{
+    display: block;
+    color: #ffffff;
+    text-align: left;
+    width: 100%;
+    height: 5vh;
+    padding: 2vh 2vh 2.5vh 2vh;
+    margin: 0;
+    background-color: #18243f;
+}
+
+.heading{
+    
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    color: white;
+    background: #4a344e;
+    
+}
+
+footer p{ 
+   padding: 0;
+    margin: 3px;
+}
+>>>>>>> f772efa8c5eba95f50ff04ee3a9173e20f67b869
