@@ -93,6 +93,16 @@ body {
     padding: 1vh;
 }
 
+.glossary-content{
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.glossary-content #topic-content{
+    grid-column: 2;
+    padding: 1vh;
+}
+
 #term-topics{
     grid-column: 1;
     height: 100vh;
