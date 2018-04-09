@@ -188,3 +188,25 @@ body {
     border-radius: 10px;
     background: rgb(178, 80, 44);
 }
+
+table {
+    border-collapse: collapse;
+}
+.tables {
+    margin: 15px;
+}
+
+.tables, th, td {
+    border: 1px solid black;
+}
+
+#subtables{
+}
+
+table td {
+    text-align: center;
+}
+
+table caption{
+    font-weight: bold;
+}
