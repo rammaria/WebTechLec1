@@ -873,7 +873,7 @@
                 <div id="dom"><a class="topiclink" name ="dom"></a>
                     <h3>DOM</h3>
                     <p>Document Object Model (DOM) represents the HTML document as nodes and objects to allow programming languages to connect to it. Programming languages, like JavaScript, can then change the HTML structure, style and content. The HTML document is represented as nodes and objects by the DOM.</p>
-                    <h4>DOM Functionalities</h4>
+                    
                     <ul>
                         <li>Retrieve references to nodes</li>
                         <ul>
@@ -897,8 +897,14 @@
                             <textarea name="dom-ex" rows="2" cols="60">
     var x = document.getElementsByClassName("class name");
                             </textarea>
+                            <li>querySelectorAll()</li>
+                            <p>Retrieving elements that matches the CSS selector specified.</p>
+                            <textarea name="dom-ex" rows="2" cols="60">
+    var x = document.querySelectorAll("h1.title");
+                            </textarea>
                         </ul>
                     </ul>
+                    <p></p>
                 </div>
                 <div id="js-libraries"></div>
                 <div id="csws"></div>
