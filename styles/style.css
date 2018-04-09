@@ -85,12 +85,13 @@ body {
 
 .page-content{
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 20% 80%;
 }
 
 .page-content #topic-content{
     grid-column: 2;
-    padding: 1vh;
+    padding: 5vh 10vh 5vh 10vh;
+    background-color: #f2e9e4;
 }
 
 .glossary-content{
@@ -189,6 +190,7 @@ body {
     background: rgb(178, 80, 44);
 }
 
+<<<<<<< HEAD
 table {
     border-collapse: collapse;
 }
@@ -210,3 +212,28 @@ table td {
 table caption{
     font-weight: bold;
 }
+=======
+.subtitle{
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 5vh;
+    margin: 0;
+    background-color: #c96d58;
+}
+
+.title{
+    display: block;
+    color: #ffffff;
+    text-align: left;
+    width: 100%;
+    height: 5vh;
+    padding: 2vh 2vh 2.5vh 2vh;
+    margin: 0;
+    background-color: #18243f;
+}
+
+.heading{
+    
+}
+>>>>>>> 4e39471d6a79ee2d19df2b582901de9e92e4c4fd
