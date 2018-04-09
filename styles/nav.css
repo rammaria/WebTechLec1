@@ -40,10 +40,14 @@ nav .dropdown .dropdown-button:hover .dropdown-content a{
     transform-origin: 50% 0;
 }
 
+nav .dropdown .dropdown-button:hover .dropdown-content {
+    height: auto;
+}
+
 nav .dropdown-content {
     position: absolute;
     overflow: hidden;
-    height: auto;
+    height: 0;
     transition: all .5s ease;
     width: 20%;
     color: #fff;
