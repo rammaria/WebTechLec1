@@ -1,6 +1,8 @@
 nav {
     font-family: sans-serif;
     font-size: 1.5em;
+    background-color: #1c1129;
+    color: #fff;
 }
 
 nav ul {
@@ -15,6 +17,10 @@ nav a{
     color: inherit;
 }
 
+nav a:hover {
+    color:#969696;
+}
+
 nav ul li{
     display: inline;
     padding: 10px;
@@ -27,16 +33,21 @@ nav .dropdown {
 }
 
 nav .dropdown .dropdown-button:hover .dropdown-content {
-    height: 85px;
+    height: auto;
 }
 
-nav .dropdown-content{
-    transition: 1s ease;
+nav .dropdown-content {
     position: absolute;
     overflow: hidden;
     height: 0px;
-    background-color: white;
+    transition: all 1.5 ease;
     width: 20%;
+    color: #fff;
+    z-index: 10;
+}
+
+nav .dropdown-content:hover {
+    height: auto;
 }
 
 nav .dropdown-content a{

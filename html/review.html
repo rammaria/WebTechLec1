@@ -1,84 +1,50 @@
 <!DOCTYPE>
 <html>
+
 <head>
     <title>Web Systems and Technologies</title>
     <link rel="stylesheet" type="text/css" href="../styles/style.css">
     <link rel="stylesheet" type="text/css" href="../styles/nav.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
+
 <body>
     <h1>Web Systems and Technologies</h1>
-    
+
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li>
                 <div class="dropdown">
-                    <div class="dropdown-button"><a href="topics.html">Courses</a></div>
-                    <div class="dropdown-content">
-                        <a href="prelims.html">Prelims</a>
-                        <a href="midterms.html">Midterms</a>
-                        <a href="finals.html">Finals</a>
+                    <div class="dropdown-button"><a href="topics.html">Courses</a>
+                        <div class="dropdown-content">
+                            <a href="prelims.html">Prelims</a>
+                            <a href="midterms.html">Midterms</a>
+                            <a href="finals.html">Finals</a>
+                        </div>
                     </div>
                 </div>
             </li>
-            <li><a href="review.html">Review</a></li>
+            <li>
+                <div class="dropdown">
+                    <div class="dropdown-button"><a href="review.html">Review</a>
+                        <div class="dropdown-content">
+                            <a href="prelims-review.html">Prelims Review</a>
+                            <a href="midterms-review.html">Midterms Review</a>
+                            <a href="finals-review.html">Finals Review</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
             <li><a href="glossary.html">Glossary</a></li>
             <li><a href="about.html">About</a></li>
-        </ul>   
+        </ul>
     </nav>
-    
-    <h1>Prelims</h1>
-    <div id="questions">
-        <p>1. Tim Berners-Lee, director of W3C, developed the World Wide Web and launched it in <span id="ans">mid-1991</span>.</p>
 
-        <p>2.<span id="ans">HTML (HyperText Markup Language)</span> is a coding system that is standardized for defining, presenting, and formatting the content of a web page. </p>
-
-        <p>3.<span id="ans">Uniform Resource Locators or URL</span> is a unique address that identifies the location of a specific web resource on the Internet.</p>
-
-        <p>4.<span id="ans">HTTP</span> is a communication protocol for applications used to retrieve hypermedia and hypertext resources available on the World Wide Web.</p>
-
-        <p>5. In 1991, HTML was first introduced by <span id="ans">Tim Berners-Lee</span> as an application of SGML (Standard Generalized Markup Language).</p>
-
-        <p>6. In 1995, HTML was published as IETF (Internet Engineering Task Force) <span id="ans">RFC 1866</span> and HTML/2.0 became the standard for HTML</p>
-
-        <p>7. HTTP/1.0 supports the following three methods: <span id="ans">GET</span>, <span id="ans">HEAD</span>, <span id="ans">POST</span></p>
-        
-        <p>8. HTTP/1.1 communicates using <span id="ans">persitent connection</span> which allows the connection between the client and server to continue until there is a close signal for the TCP connection.</p>
-        
-        <p>9. Additional methods for HTTP/1.1 are <span id="ans">DELETE</span>, <span id="ans">PUT</span>, <span id="ans">TRACE</span>, <span id="ans">CONNECT</span>.</p>
-        
-        <p>10. The <span id="ans">opening line</span> consists of the method, the path to the resource(s) needed, known as the the Uniform Resource Identifier (URI) and the HTTP version used.</p>
-        
-        <p>11. <span id="ans">GET</span> is used to retrieve data and body from the URI specified.</p>
-        
-        <p>12. PUT is similar to <span id="ans">POST</span>, however, the entity given by the client is asked to be stored in the URI</p>
-        
-        <p>13. <span id="ans">HTTP Extensions</span> are used to define new request methods, headers and status codes to then be implemented for the servers and/or clients to use.</p>
-        
-        <p>14. The <span id="ans">TRACE</span> method requests a loop-back of request messages in the identified URI.</p>
-        
-        <p>15. The <span id="ans">OPTIONS</span> method requests information on the methods allowed in the specified URI</p>
-        
-        <p>16. <span id="ans">HTTP Response Message</span> is sent by the server to the HTTP client after a request.</p>
-        
-        <p>17. <span id="ans">HTTP/2</span> is an alternative to HTTP/1.1</p>
-        
-        <p>18. Content Negotiation, Multiplexing, Authentication/Authorization, Content/Transfer codings, Cache Control, Language and Character set, and Content Media Type are supported by <span id="ans">HTTP</span></p>
-        
-        <p>19. Uniform Resource Identifier or URI is a string of characters that determines a <span id="ans">resource</span></p>
-        
-        <p>20. <span id="ans">HTML 3.2</span> was the first version developed and standardized exclusively by W3C. It is also code named Wilbur</p>
-        
-        <p>Response Status Codes</p>
-        <p>1** - <span id="ans">Informational</span><br>
-        2** - <span id="ans">Successful</span><br>
-        3** - <span id="ans">Redirection</span><br>
-        4** - <span id="ans">Client Error</span><br>
-        5** - <span id="ans">Server Error</span></p>
-        
+    <div class="page-content">
+        <a href="prelims-review.html">Prelims Review</a>
+        <a href="midterms-review.html">Midterms Review</a>
+        <a href="finals-review.html">Finals Review</a>
     </div>
-    
-</body>
 
 </html>
