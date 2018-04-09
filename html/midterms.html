@@ -426,6 +426,7 @@
                             <tr>
                                 <th>Symbol</th>
                                 <th>Description</th>
+                                <th>Example</th>
                             </tr>
                             <tr>
                                 <td>&lt;</td>
@@ -544,6 +545,7 @@
                             <tr>
                                 <th>Symbol</th>
                                 <th>Description</th>
+                                <th>Example</th>
                             </tr>
                             <tr>
                                 <td>&&</td>
@@ -721,13 +723,13 @@
                     <h6>Conditional Statements</h6>
                     <p><a name="conditional-statements"></a>Conditional Statemetns are used to change the Program Flow by executing a set of code if a specific condition is satisfied. JavaScript uses the if, if...else, and switch conditional statements</p>
                     <p>The <a name="if-statement"></a>if statement is used to execute a set of code if a condition is true.</p>
-                    <textarea name="data-types-ex" rows="4" cols="30">
+                    <textarea name="conditional-ex" rows="4" cols="30">
     if (animal == "cat") {
         greet = "Meow";
     }
                     </textarea>
                     <p><a name="if-else-statement"></a>A different kind of the if statement is the if..else statement. The if...else statement executes a set of code if a condition is true and executes a different set of code if the condition is not true.</p>
-                    <textarea name="data-types-ex" rows="6" cols="45">
+                    <textarea name="conditional-ex" rows="6" cols="45">
     if (animal == "cat") {
         greet = "Meow";
     } else {
@@ -735,7 +737,7 @@
     }
                     </textarea>
                     <p>An addition to the if...else is the else if statement. The else if statement provides another condition to be evaluated if the previous condition is false. If the condition is still false after the else if statement, the next else if condition will be evaluated, if there are any, or the else statement will be executed.</p>
-                    <textarea name="data-types-ex" rows="8" cols="45">
+                    <textarea name="conditional-ex" rows="8" cols="45">
     if (animal == "cat") {
         greet = "Meow";
     } else if (animal == "dog"{
@@ -745,7 +747,7 @@
     }
                     </textarea>
                     <p><a name="switch-statement"></a>A switch statement is similar to the if..else if statement. In a switch statement, an expression is compared to multiple cases and if the expression matches a case, the code associated with the case will be executed. If the expression doesn't match with any of the cases, the code in the default statement will be executed</p>
-                    <textarea name="data-types-ex" rows="12" cols="40">
+                    <textarea name="conditional-ex" rows="12" cols="40">
     switch (animal) {
     case "Cat:
         greet = "Meow";
@@ -760,26 +762,26 @@
                     <h6>Loops</h6>
                     <p><a name="loops"></a>Loops are used to run the same set of code multiple times with the values usually different from the previous iteration of the loop. JavaScript incorporates multiple kinds of loops: for loops, for/in loop, while loop, and do/while loop.</p>
                     <p>A for loop is a loop that has a specified counter variable, test condition, and counter iterator statement. Before the for loop is executed, the test condition has to be first satisfied. After completing the set of code inside the loop, the counter is changed according to the specified counter  iterator and the condition is tested again and it repeats the process until the condition is no longer satisfied </p>
-                    <textarea name="data-types-ex" rows="5" cols="40">
+                    <textarea name="conditional-ex" rows="5" cols="40">
     for (i = 0; i &lt; 10; i++) {
         age = i;         
     }
                     </textarea>
                     <p>The for...in loop is a different variant of a for loop. In a for...in loop, a variable is iterated over an object and for every distinct property, the set of code in the for...in loop will be executed.</p>
-                    <textarea name="data-types-ex" rows="6" cols="40">
+                    <textarea name="conditional-ex" rows="6" cols="40">
     var pet = ' ';
     for (var i in animals){
         pet += animals[x];        
     }         
                     </textarea>
                     <p>A while loop has a condition that has to be satisfied before executing the associated set of code with the loop. The set of codes will be continually iterated until the specified condition is false</p>
-                    <textarea name="data-types-ex" rows="4" cols="40">
+                    <textarea name="conditional-ex" rows="4" cols="40">
     while(day = birthday) {
         age += 1;             
     }        
                     </textarea>    
                     <p>The do/while loop is also a different variant of the while loop. In the do/while loop, the set of code is executed first before the condition in the while statement is evaluated. The loop continues to iterate while the condition is satisfied</p>
-                    <textarea name="data-types-ex" rows="5" cols="40">
+                    <textarea name="conditional-ex" rows="5" cols="40">
     do {
         age += 1;         
     }
@@ -788,7 +790,7 @@
                     <h5>Functions</h5>
                     <p><a name="function"></a>A function is a combination of several operations and statements under a name. The function executes the entire set of code by calling it and giving it the values it needs. JavaScript has it's own Built-In but it also allows functions to be defined by the programmer.</p>
                     <p>Functions are defined by using the function keyword followed by the function's name, the parameters of the function enclosed by parentheses and separated by commas if there are multiple parameters, and the JavaScript statements enclosed by curly brackets.</p>
-                    <textarea name="data-types-ex" rows="8" cols="40">
+                    <textarea name="function-ex" rows="8" cols="40">
     function ifEven(number) {
         if(number % 2 == 0) {
             return true;                
@@ -799,13 +801,13 @@
                     </textarea>
                     <p>Defining a function is merely creating it. Executing a function requires the function to be called. Calling a function is simply writing the function's name together with the required parameter/s enclosed in parentheses.</p>
                     <p>After calling the function, the set of code in the function will be executed with the value/s passed in the function call.</p>
-                    <textarea name="data-types-ex" rows="2" cols="40">
+                    <textarea name="function-ex" rows="2" cols="40">
     ifEven(8); //will return true     
                     </textarea>
                     <h5>Objects</h5>
                     <p>An <a name="object"></a>Object is simply a collection of functions and values. When a function is a member of an object, it's called a method. A value that is a member of an object is called a property.</p>
                     <p>Defining an object is similar to a variable because an object is essentially just a variable with multiple values and functions. Object definition can be done in a single line or in multiple lines.</p>
-                    <textarea name="data-types-ex" rows="7" cols="70">
+                    <textarea name="object-ex" rows="7" cols="70">
     var pet = {
         name: "Jack",
         animal: "Dog",
@@ -814,19 +816,19 @@
     };    
                     </textarea>
                     <p>Accessing an object's property can be done in two ways.</p>
-                    <textarea name="data-types-ex" rows="4" cols="30">
+                    <textarea name="object-ex" rows="4" cols="30">
     pet.name;
     //or
     pet["name"];
                     </textarea>
                     <p>Calling an object's method can be done as following.</p>
-                    <textarea name="data-types-ex" rows="3" cols="30">
+                    <textarea name="object-ex" rows="3" cols="30">
     name = pet.petName();
                     </textarea>
                     <h5>Arrays</h5>
                     <p><a name="array"></a>An array is a variable that can store multiple values. The difference between Arrays and Objects is that Arrays use numbered indexes while objects use named indexes.</p>
                     <p>Creating an Array is similar to creating an object. Values can be written in a single line or be divided into multiple lines.</p>
-                    <textarea name="data-types-ex" rows="9" cols="60">
+                    <textarea name="array-ex" rows="9" cols="60">
     var animals = ["Cat", "Dog", "Bird", "Fish"];
     //or
     var animals = [
@@ -837,38 +839,67 @@
     ];
                     </textarea>
                     <p>Elements of the array can be accessed by using the index number. This can be used to retrieve or modify the element of the specific index. The full array can be accessed by using the array name.</p>
-                    <textarea name="data-types-ex" rows="4" cols="70">
+                    <textarea name="array-ex" rows="4" cols="70">
     var pet = animals[0]; //retrieves the element in index 0
                         
     animals[1]; = "Rabbit" //modifies the element in index 1
                     </textarea>
                     <p>The length of an array is returned by the length property. The length of an array is the number of elements in the array.</p>
-                    <textarea name="data-types-ex" rows="4" cols="80">
+                    <textarea name="array-ex" rows="4" cols="80">
     var animals = ["Cat", "Dog", "Bird", "Fish"];
     animals.length; //will return 4 because there are 4 elements in the array
                     </textarea>
                     <p>Adding a new element to an array can be done by using the push method or by getting the length of the array then adding the new element at that index.</p>
-                    <textarea name="data-types-ex" rows="5" cols="80">
+                    <textarea name="array-ex" rows="5" cols="80">
     var animals = ["Cat", "Dog", "Bird", "Fish"];
     animals.push("Rabbit");
     //or
     animals[animals.length] = "Rabbit";
                     </textarea>
                     <p>Deleting an element of an array can also be done in multiple ways. The pop method removes the last element of the array. While using the delete statement allows you to specify which index of the array to delete</p>
-                    <textarea name="data-types-ex" rows="5" cols="80">
+                    <textarea name="array-ex" rows="5" cols="80">
     var animals = ["Cat", "Dog", "Bird", "Fish"];
     animals.pop(); //will remove "Fish"
     //or
     delete animals[0] will remove "Cat"
                     </textarea>
                     <p>JavaScript allows arrays to be merged with other arrays by using the concat method.</p>
-                    <textarea name="data-types-ex" rows="4" cols="80">
+                    <textarea name="array-ex" rows="4" cols="80">
     var animals = ["Cat", "Dog", "Bird", "Fish"];
     var pets = ["Bruce", "Spike", "Brownie"];
     var petAnimals = animals.concat(pets);
                     </textarea>
                 </div>
-                <div id="dom"></div>
+                <div id="dom"><a class="topiclink" name ="dom"></a>
+                    <h3>DOM</h3>
+                    <p>Document Object Model (DOM) represents the HTML document as nodes and objects to allow programming languages to connect to it. Programming languages, like JavaScript, can then change the HTML structure, style and content. The HTML document is represented as nodes and objects by the DOM.</p>
+                    <h4>DOM Functionalities</h4>
+                    <ul>
+                        <li>Retrieve references to nodes</li>
+                        <ul>
+                            <li>getElementById()</li>
+                            <p>Retrieving elements using the id attribute.</p>
+                            <textarea name="dom-ex" rows="2" cols="50">
+    var x = document.getElementById("id");
+                            </textarea>
+                            <li>getElementsByTagName()</li>
+                            <p>Retrieving elements using the tag used in the document.</p>
+                            <textarea name="dom-ex" rows="2" cols="50">
+    var x = document.getElementsByTagName("div");
+                            </textarea>
+                            <li>getElementsByName()</li>
+                            <p>Retrieving elements using the name of the element in the document.</p>
+                            <textarea name="dom-ex" rows="2" cols="50">
+    var x = document.getElementsByName("name");
+                            </textarea>
+                            <li>getElementsByClassName()</li>
+                            <p>Retrieving elements using the class name of the element in the document.</p>
+                            <textarea name="dom-ex" rows="2" cols="60">
+    var x = document.getElementsByClassName("class name");
+                            </textarea>
+                        </ul>
+                    </ul>
+                </div>
                 <div id="js-libraries"></div>
                 <div id="csws"></div>
             </div>
@@ -885,7 +916,6 @@
                     <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors">Selectors</a></li>
                     <li><a href="https://docs.microsoft.com/en-us/scripting/javascript/javascript-fundamentals">Java Script Fundamentals</a></li>
                     <li><a href="https://www.w3schools.com/jsref/jsref_operators.asp">JavaScript Operators</a></li>
-
                 </ul>
             </div>
         </div>
