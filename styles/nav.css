@@ -53,3 +53,24 @@ nav .dropdown-content:hover {
 nav .dropdown-content a{
     display: block;
 }
+
+table {
+    border-collapse: collapse;
+}
+.tables {
+    margin: 15px;
+}
+
+.tables, th, td {
+    border: 1px solid black;
+}
+
+#subtables{
+}
+
+table td {
+    text-align: center;
+}
+
+
+
