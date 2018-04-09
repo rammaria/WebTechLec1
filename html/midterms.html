@@ -67,7 +67,7 @@
                             <li><a href="#css-statements">CSS Statements</a></li>
                             <li><a href="#css-selectors">CSS Selectors</a></li>
                         </ul>
-                        <li><a>Preprocessors, Frameworks, and Libraries</a></li>
+                        <li><a href="#css-etc">Preprocessors, Frameworks, and Libraries</a></li>
                     </ul>
                     <li><a class = "topiclink" href="#scripting">Client-Side Web Scripting</a></li>
                     <ul>
@@ -250,14 +250,50 @@
                                 <p>A class selector specifies the class name of elements that needs to be styled.</p>
                                 <li>ID Selectors</li>
                                 <p>An ID selector specifies the id of elements that needs to be styled.</p>
+                                <li>Universal Selector</li>
+                                <p>The universal selector in CSS is an asterisk <b>*</b>. The asterisk matches any element in the HTML document.</p>
                             </ul>
                             <li>Combinators</li>
+                            <p>Combinators are operators that specifies the relationship between one selector and another</p>
+                            <ul id="combinators">
+                                <li>Space - A selector followed by a space, specifies the descendant selectors of the type</li>
+                                <li> &gt; - A selector followed by a greater than symbol specifies children of the specified element.</li>
+                                <li> + - A selector followed by a plus sign specifies the adjacent siblings of the specified element.</li>
+                                <li> ~ - A selector followed by a tilde symbol specifies the general sibling of the specified element.</li>
+                            </ul>
+                            
+                            <li>Selector Group</li>
+                            <p> A selector group is a lists that consists of selectors separated using commas that specifies the union of all the elements that were listed. An example is provided below:</p>
+                            
+                            <textarea name="type-selector" rows="6" cols="30">
+    /*This selects all the p, span, h1 elements*/
+    p, span, h1{ color: pink; }
+                            </textarea>
                             <li>Pseudo-Classes</li>
                             <li>Pseudo-Elements</li>
                         </ul>
                     </div>
 
+                    <div id="rules-of-precedence">
+                        <h5>Rules of Precedence</h5>
+                        <p>The rules of precedence provides a way to prioritize which HTML elements are styled. These rules help solved conflict in cascading. There are different factors to consider when the broweser renders the selectors of elements. This factor includes <b>specificity</b> and <b>order</b></p>
+
+                        <p>The specificity of selectors are computed whether it is a type, class, or id. To know more about CSS specificity click on this link <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity">Specificity guide by MDN</a>.</p>
+
+                        <p>The order of precedence depends on which one was declared last. The last declaration of a rule set will preced the previous declaration of the same rule set.</p>
+                    </div>
+
+                    <div id="css-etc">
+                        <h5>CSS Preprocessors</h5>
+                        <p>CSS Preprocessors allow a CSS file with a different or shortened syntax to be converted to an actual stylesheet with the standard syntax. It is also capable of combining separated files using these preprocessors. Some examples of preprocessors are <a href="https://sass-lang.com/guide">Sass</a>, <a href="http://lesscss.org/">Less</a>, <a href="http://stylus-lang.com/">Stylus</a>, and etc.</p>
+                        <h5>CSS Frameworks</h5>
+                        <p>CSS Frameworks are ready made CSS designs and functionality to allow designers to easily implement standard CSS designs. Some examples of CSS Frameworks are <a href="http://getbootstrap.com/">Bootstrap</a>, <a href="https://foundation.zurb.com/">Foundation</a>, <a href="https://bulma.io/">Bulma</a>, and etc.</p>
+                        <h5>CSS Polyfills</h5>
+                        <p>CSS Polyfills are plugin-like codes that allows features that developers expect from a web browser.</p>
+                    </div>
+
                 </div>
+            </div>
 
                 To know more about the rules of CSS, read <a href="https://www.w3.org/TR/REC-CSS2/syndata.html#q8">CSS 2 Syntax and Basic Data Types</a>
             </div>
